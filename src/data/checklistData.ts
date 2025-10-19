@@ -25,14 +25,9 @@ export const checklistData: ChecklistSection[] = [
       {
         id: "401k-match",
         title: "Contribute enough to your 401(k) to get the full company match",
-        description:
-          "If your employer offers a retirement match to a 401(k), 403(b), or similar.",
+        description: "If your employer offers a retirement match to a 401(k), 403(b), or similar.",
         details:
           "This is literally free money from your employer. If they match 50% up to 6% of your salary, and you're not contributing at least 6%, you're leaving money on the table. Most matches vest immediately or over a few years.",
-        branches: {
-          question: "Does your employer offer a 401(k) match?",
-          options: [{ label: "Yes" }, { label: "No, skip this step" }],
-        },
       },
       {
         id: "high-interest-debt",
@@ -71,10 +66,7 @@ export const checklistData: ChecklistSection[] = [
           "For 2024, you can contribute up to $7,000 ($8,000 if 50+) to an IRA or Roth IRA. Traditional IRA contributions may be tax-deductible, while Roth IRA contributions are after-tax but grow tax-free. If you're over the Roth income limit, consider a backdoor Roth IRA conversion.",
         branches: {
           question: "Which IRA type is best for you?",
-          options: [
-            { label: "Traditional IRA (tax deduction now)" },
-            { label: "Roth IRA (tax-free growth)" },
-          ],
+          options: [{ label: "Traditional IRA (tax deduction now)" }, { label: "Roth IRA (tax-free growth)" }],
         },
       },
       {
