@@ -163,4 +163,138 @@ export const checklistData: Checklist[] = [
       },
     ],
   },
+  {
+    id: "having-children",
+    title: "Having Children Checklist",
+    description: "Financial preparation for parenthood",
+    subtitle: "Plan ahead for your growing family",
+    sections: [
+      {
+        id: "before-children",
+        title: "🛡️ Before Having Children",
+        subtitle: "Prepare your finances before baby arrives",
+        colorScheme: "foundation",
+        items: [
+          {
+            id: "personal-finance-first",
+            title: "Take care of yourself first",
+            description: "Just like putting your mask on in an airplane before helping others.",
+            details:
+              "Before having children, ensure your own financial house is in order. This means having an emergency fund, manageable debt, and a solid budget. Complete the [Personal Finance Checklist](/checklist/personal-finance) first to build your foundation.",
+          },
+          {
+            id: "child-budget",
+            title: "Create a new budget for child expenses",
+            description: "Plan for increased costs including childcare, diapers, and more.",
+            details:
+              "Children are expensive. Budget for: diapers ($70-80/month), formula if not breastfeeding ($150-200/month), childcare ($800-2,000/month depending on location), clothing, medical expenses, and toys. The USDA estimates middle-income families spend $12,000-14,000 per year per child.",
+          },
+          {
+            id: "emergency-fund-children",
+            title: "Increase emergency fund to 6-12 months",
+            description: "Larger safety net for a larger family.",
+            details:
+              "With children, unexpected expenses multiply. Aim for 6-12 months of expenses (higher end if single income household). This protects your family if you need to take unpaid leave, have medical emergencies, or face job loss.",
+          },
+        ],
+      },
+      {
+        id: "after-birth",
+        title: "👶 After Child is Born",
+        subtitle: "Essential financial steps for new parents",
+        colorScheme: "growth",
+        items: [
+          {
+            id: "update-beneficiaries",
+            title: "Update beneficiaries on all accounts",
+            description: "Retirement accounts, life insurance, bank accounts, etc.",
+            details:
+              "Review and update beneficiaries on your 401(k), IRA, life insurance policies, bank accounts, and investment accounts. Don't forget about payable-on-death (POD) designations. These designations supersede your will, so keeping them current is critical.",
+          },
+          {
+            id: "create-will",
+            title: "Create or update your will",
+            description: "Name guardians for your children and specify asset distribution.",
+            details:
+              "A will is essential with children. Name a guardian (and backup guardian) for minor children, specify how assets should be distributed, and name an executor. Consider setting up a trust to manage assets until children reach adulthood. Consult an estate planning attorney for your specific situation.",
+          },
+          {
+            id: "life-insurance",
+            title: "Get life insurance",
+            description: "Term life insurance provides affordable protection for your family.",
+            details:
+              "In the majority of cases, term life insurance is more appropriate than whole life. Calculate coverage as 10-12x your annual income, or enough to replace your income until children are independent plus pay off debts. A 20-30 year term policy is typically recommended. Both parents should be insured, including stay-at-home parents (childcare replacement costs are significant).",
+          },
+          {
+            id: "health-insurance-dependent",
+            title: "Update health insurance for your new dependent",
+            description: "Add your child to your health insurance plan.",
+            details:
+              "You typically have 30-60 days from birth to add your baby to your health insurance plan (qualifying life event). Compare your plan with your spouse's to choose the best coverage. Don't miss this deadline or you'll have to wait until open enrollment.",
+          },
+          {
+            id: "dependent-care-fsa",
+            title: "Enroll in Dependent Care FSA",
+            description: "Save pre-tax dollars for childcare expenses.",
+            details:
+              "A Dependent Care FSA allows you to set aside up to $5,000/year (per household) pre-tax for qualified childcare expenses. This covers daycare, preschool, before/after school care, and summer day camps. Calculate carefully—unused funds are forfeited at year-end.",
+          },
+          {
+            id: "529-plan",
+            title: "Open a 529 college savings plan",
+            description: "Start saving for education expenses with tax-free growth.",
+            details:
+              "529 plans offer tax-free growth for education expenses. You can use any state's plan, though your state may offer tax deductions for contributions. Start with automatic monthly contributions—even $50-100/month adds up over 18 years due to compound growth. Grandparents can also contribute.",
+          },
+          {
+            id: "estate-planning-docs",
+            title: "Complete estate planning documents",
+            description: "Power of attorney, healthcare directives, and living will.",
+            details:
+              "Beyond a will, establish durable power of attorney (financial decisions if incapacitated), healthcare power of attorney (medical decisions), and a living will (end-of-life care preferences). These protect your family if you're unable to make decisions yourself.",
+          },
+        ],
+      },
+      {
+        id: "optimize-children",
+        title: "🚀 Optimize",
+        subtitle: "Advanced strategies for your child's financial future",
+        colorScheme: "optimize",
+        items: [
+          {
+            id: "increase-529",
+            title: "Maximize 529 plan contributions",
+            description: "Aim to cover a significant portion of college costs.",
+            details:
+              "For a child born today, 4 years of public in-state college may cost $200,000-250,000 (factoring in inflation). Private colleges could exceed $500,000. Use 529 calculators to set goals. Remember: you can adjust contributions based on scholarships, and funds can be transferred to siblings if needed.",
+            isOptional: true,
+          },
+          {
+            id: "custodial-ira",
+            title: "Contribute to child's IRA when they have earned income",
+            description: "Custodial Roth IRA for children with part-time jobs (typically 16+).",
+            details:
+              "Once your child has earned income (part-time job, modeling, acting, or working at a family business), they can contribute to a Roth IRA. You can contribute up to their earned income or $7,000 (2024), whichever is less. Starting at 16 and contributing $3,000/year could grow to over $500,000 by retirement due to decades of tax-free compound growth.",
+            isOptional: true,
+          },
+          {
+            id: "teach-financial-literacy",
+            title: "Teach financial literacy",
+            description: "Help your children develop healthy money habits.",
+            details:
+              "The most valuable gift is financial education. Teach budgeting with allowance, the power of compound interest, needs vs. wants, and responsible credit card use. Consider opening a custodial brokerage account to teach investing. Start age-appropriate conversations early—even young children can learn about saving and delayed gratification.",
+            isOptional: true,
+          },
+          {
+            id: "utma-ugma",
+            title: "Consider UTMA/UGMA custodial accounts",
+            description: "For flexibility beyond education expenses.",
+            details:
+              "Unlike 529 plans (education only), UTMA/UGMA accounts can fund anything for the child's benefit—first car, wedding, home down payment. However, these are taxable accounts and become the child's property at age 18-21 (state dependent). Contribute after maxing 529 if you want more flexibility.",
+            isOptional: true,
+          },
+        ],
+      },
+    ],
+  },
 ];
