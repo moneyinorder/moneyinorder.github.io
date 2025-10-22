@@ -56,7 +56,7 @@ export const ChecklistCard = ({
             handleClick();
           }}
         >
-          Continue Checklist
+          {completedSteps === 0 ? "Start Checklist" : "Continue Checklist"}
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       </CardContent>
