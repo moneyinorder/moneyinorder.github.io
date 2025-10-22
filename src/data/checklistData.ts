@@ -13,6 +13,7 @@ export interface Checklist {
   title: string;
   description: string;
   subtitle: string;
+  tags: string[];
   sections: ChecklistSection[];
 }
 
@@ -22,6 +23,7 @@ export const checklistData: Checklist[] = [
     title: "Personal Finance",
     description: "Your roadmap to financial freedom",
     subtitle: "Build your financial foundation step by step",
+    tags: ["financial independence", "personal finance", "money habits", "retirement", "building wealth"],
     sections: [
       {
         id: "foundation",
@@ -168,6 +170,7 @@ export const checklistData: Checklist[] = [
     title: "Having Children",
     description: "Financial preparation for parenthood",
     subtitle: "Plan ahead for your growing family",
+    tags: ["children", "baby", "parents"],
     sections: [
       {
         id: "before-children",
@@ -302,6 +305,7 @@ export const checklistData: Checklist[] = [
     title: "Marriage and Relationships",
     description: "Financial planning for couples",
     subtitle: "Build a strong financial partnership together",
+    tags: ["marriage", "relationships", "partner", "wife", "husband", "girlfriend", "boyfriend"],
     sections: [
       {
         id: "foundation-conversations",
