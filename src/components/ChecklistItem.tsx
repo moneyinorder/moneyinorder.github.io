@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CheckCircle2, Circle, ChevronDown, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 // Helper function to format details text with markdown-like syntax
@@ -7,11 +8,26 @@ const formatDetails = (text: string) => {
   const lines = text.split('\n');
   
   return lines.map((line, idx) => {
-    // Handle bold text
-    const parts = line.split(/(\*\*[^*]+\*\*)/g);
+    // Handle both bold text and links
+    const parts = line.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
     const formattedLine = parts.map((part, partIdx) => {
+      // Handle bold text
       if (part.startsWith('**') && part.endsWith('**')) {
         return <strong key={partIdx}>{part.slice(2, -2)}</strong>;
+      }
+      // Handle markdown links [text](url)
+      const linkMatch = part.match(/\[([^\]]+)\]\(([^)]+)\)/);
+      if (linkMatch) {
+        return (
+          <Link 
+            key={partIdx} 
+            to={linkMatch[2]} 
+            className="text-primary hover:underline font-medium"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {linkMatch[1]}
+          </Link>
+        );
       }
       return part;
     });
@@ -45,6 +61,7 @@ export interface ChecklistItemData {
   description: string;
   details?: string;
   isOptional?: boolean;
+  titleLink?: string;
   branches?: {
     question: string;
     options: { label: string; nextId?: string }[];
@@ -102,7 +119,17 @@ export const ChecklistItem = ({
                     isCompleted ? "text-success" : "text-foreground"
                   )}
                 >
-                  {item.title}
+                  {item.titleLink ? (
+                    <Link 
+                      to={item.titleLink} 
+                      className="hover:text-primary hover:underline"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {item.title}
+                    </Link>
+                  ) : (
+                    item.title
+                  )}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {item.description}

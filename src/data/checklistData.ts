@@ -369,6 +369,7 @@ export const checklistData: Checklist[] = [
             description: "Discuss your plans and expectations around having kids.",
             details:
               "Have honest conversations about:\n\n• **How many children** do you want (if any)?\n• **Education preferences**: Private vs. public schools?\n• **College support**: Will you financially support them through college? How much?\n• **Timeline**: When do you want to start a family?\n• **Childcare approach**: Stay-at-home parent, daycare, or family help?\n\nThese decisions have massive financial implications. Once you're aligned, refer to the [Having Children Checklist](/checklist/having-children) for detailed financial planning.",
+            titleLink: "/checklist/having-children",
           },
           {
             id: "what-to-keep-separate",
