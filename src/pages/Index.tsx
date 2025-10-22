@@ -66,6 +66,7 @@ const Index = () => {
                   totalSteps={totalSteps}
                   completedSteps={completedSteps}
                   colorScheme="primary"
+                  recommended={checklist.id === "personal-finance"}
                 />
               );
             })}

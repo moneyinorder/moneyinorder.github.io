@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -11,6 +12,7 @@ interface ChecklistCardProps {
   totalSteps: number;
   completedSteps: number;
   colorScheme: string;
+  recommended?: boolean;
 }
 
 export const ChecklistCard = ({
@@ -20,6 +22,7 @@ export const ChecklistCard = ({
   totalSteps,
   completedSteps,
   colorScheme,
+  recommended = false,
 }: ChecklistCardProps) => {
   const navigate = useNavigate();
   const percentage = Math.round((completedSteps / totalSteps) * 100);
@@ -30,9 +33,18 @@ export const ChecklistCard = ({
 
   return (
     <Card
-      className="cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-primary/50"
+      className={`relative cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-primary/50 ${
+        recommended ? "border-green-500 border-2" : ""
+      }`}
       onClick={handleClick}
     >
+      {recommended && (
+        <Badge 
+          className="absolute -top-2 -left-2 bg-green-500 hover:bg-green-600 text-white z-10 shadow-lg"
+        >
+          Recommended
+        </Badge>
+      )}
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <span>{title}</span>
