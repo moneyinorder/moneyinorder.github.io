@@ -49,10 +49,8 @@ const Index = () => {
       {/* Main Content */}
       <main className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Featured: Personal Finance Checklist */}
-          {checklistData
-            .filter((checklist) => checklist.id === "personal-finance")
-            .map((checklist) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {checklistData.map((checklist) => {
               const totalSteps = checklist.sections.reduce(
                 (acc, section) => acc + section.items.length,
                 0
@@ -60,58 +58,17 @@ const Index = () => {
               const completedSteps = checklistProgress[checklist.id] || 0;
 
               return (
-                <div key={checklist.id} className="mb-12">
-                  <div className="flex items-center gap-2 mb-4">
-                    <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-sm font-semibold rounded-full">
-                      ⭐ Start Here
-                    </span>
-                  </div>
-                  <div className="md:max-w-2xl">
-                    <ChecklistCard
-                      id={checklist.id}
-                      title={checklist.title}
-                      subtitle={checklist.subtitle}
-                      totalSteps={totalSteps}
-                      completedSteps={completedSteps}
-                      colorScheme="primary"
-                    />
-                  </div>
-                </div>
+                <ChecklistCard
+                  key={checklist.id}
+                  id={checklist.id}
+                  title={checklist.title}
+                  subtitle={checklist.subtitle}
+                  totalSteps={totalSteps}
+                  completedSteps={completedSteps}
+                  colorScheme="primary"
+                />
               );
             })}
-
-          {/* Other Checklists */}
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold text-foreground">
-              More Checklists
-            </h2>
-            <p className="text-muted-foreground mt-2">
-              Explore these specialized financial planning guides
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {checklistData
-              .filter((checklist) => checklist.id !== "personal-finance")
-              .map((checklist) => {
-                const totalSteps = checklist.sections.reduce(
-                  (acc, section) => acc + section.items.length,
-                  0
-                );
-                const completedSteps = checklistProgress[checklist.id] || 0;
-
-                return (
-                  <ChecklistCard
-                    key={checklist.id}
-                    id={checklist.id}
-                    title={checklist.title}
-                    subtitle={checklist.subtitle}
-                    totalSteps={totalSteps}
-                    completedSteps={completedSteps}
-                    colorScheme="primary"
-                  />
-                );
-              })}
           </div>
 
           {/* Empty State for future checklists */}
