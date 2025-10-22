@@ -394,13 +394,6 @@ export const checklistData: Checklist[] = [
               "Review and update beneficiaries on:\n\n• Retirement accounts (401(k), IRA, Roth IRA)\n• Life insurance policies\n• Bank accounts and investment accounts\n• Payable-on-death (POD) designations\n\nBeneficiary designations supersede your will, so keeping them current is critical. Many people forget to do this and it can cause major issues later.",
           },
           {
-            id: "children-checklist-link",
-            title: "If you've decided to have children, follow the Having Children checklist",
-            description: "Complete financial planning for starting your family.",
-            details:
-              "Having children brings significant financial changes and responsibilities. Follow the [Having Children Checklist](/checklist/having-children) to ensure you're financially prepared for parenthood, including budgeting for child expenses, life insurance, 529 plans, estate planning, and more.",
-          },
-          {
             id: "create-will-marriage",
             title: "Create or update your will",
             description: "Ensure your assets are distributed according to your wishes.",
@@ -413,6 +406,13 @@ export const checklistData: Checklist[] = [
             description: "Especially critical in single-income households.",
             details:
               "Protect your family's financial future:\n\n• **Life insurance**: Term life insurance is typically most appropriate. Calculate coverage as 10-12x annual income of the insured. Both spouses should be insured—even a stay-at-home spouse provides significant economic value (childcare, household management).\n• **Disability insurance**: Protects income if you become unable to work. Particularly important for the primary earner or in single-income households.\n• **Single-income households**: These protections are absolutely critical when one person's income supports the entire family.",
+          },
+          {
+            id: "children-checklist-link",
+            title: "If you've decided to have children, follow the Having Children checklist",
+            description: "Complete financial planning for starting your family.",
+            details:
+              "Having children brings significant financial changes and responsibilities. Follow the [Having Children Checklist](/checklist/having-children) to ensure you're financially prepared for parenthood, including budgeting for child expenses, life insurance, 529 plans, estate planning, and more.",
           },
         ],
       },
