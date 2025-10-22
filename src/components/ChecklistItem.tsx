@@ -2,6 +2,43 @@ import { useState } from "react";
 import { CheckCircle2, Circle, ChevronDown, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+// Helper function to format details text with markdown-like syntax
+const formatDetails = (text: string) => {
+  const lines = text.split('\n');
+  
+  return lines.map((line, idx) => {
+    // Handle bold text
+    const parts = line.split(/(\*\*[^*]+\*\*)/g);
+    const formattedLine = parts.map((part, partIdx) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={partIdx}>{part.slice(2, -2)}</strong>;
+      }
+      return part;
+    });
+
+    // Check if line is a bullet point
+    if (line.trim().startsWith('•')) {
+      return (
+        <div key={idx} className="ml-4 mb-2">
+          {formattedLine}
+        </div>
+      );
+    }
+    
+    // Regular line with line break
+    if (line.trim()) {
+      return (
+        <div key={idx} className="mb-2">
+          {formattedLine}
+        </div>
+      );
+    }
+    
+    // Empty line for spacing
+    return <div key={idx} className="h-2" />;
+  });
+};
+
 export interface ChecklistItemData {
   id: string;
   title: string;
@@ -110,7 +147,7 @@ export const ChecklistItem = ({
                 </button>
                 {isExpanded && (
                   <div className="mt-3 p-4 bg-muted/50 rounded-lg text-sm text-foreground leading-relaxed animate-accordion-down">
-                    {item.details}
+                    {formatDetails(item.details)}
                   </div>
                 )}
               </div>

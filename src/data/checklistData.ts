@@ -305,7 +305,7 @@ export const checklistData: Checklist[] = [
     sections: [
       {
         id: "foundation-conversations",
-        title: "💬 Foundation Conversations",
+        title: "Foundation Conversations",
         subtitle: "Start with open, honest discussions",
         colorScheme: "foundation",
         items: [
@@ -355,7 +355,7 @@ export const checklistData: Checklist[] = [
       },
       {
         id: "before-marriage",
-        title: "💍 Before Marriage",
+        title: "Before Marriage",
         subtitle: "Important decisions to make before tying the knot",
         colorScheme: "growth",
         items: [
@@ -377,7 +377,7 @@ export const checklistData: Checklist[] = [
       },
       {
         id: "after-marriage",
-        title: "👰🤵 After Marriage",
+        title: "After Marriage",
         subtitle: "Essential financial and legal updates",
         colorScheme: "optimize",
         items: [
