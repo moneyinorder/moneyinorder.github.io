@@ -297,4 +297,120 @@ export const checklistData: Checklist[] = [
       },
     ],
   },
+  {
+    id: "marriage-relationships",
+    title: "Marriage and Relationships",
+    description: "Financial planning for couples",
+    subtitle: "Build a strong financial partnership together",
+    sections: [
+      {
+        id: "foundation-conversations",
+        title: "💬 Foundation Conversations",
+        subtitle: "Start with open, honest discussions",
+        colorScheme: "foundation",
+        items: [
+          {
+            id: "set-the-stage",
+            title: "Set the stage for financial conversations",
+            description: "Create a safe, non-judgmental space to discuss money.",
+            details:
+              "Start by expressing care: 'I care about you and want us to succeed financially together.' Acknowledge that personal finance wasn't taught in school—it's a skill you're building together. There's no shame in not knowing everything. Consider breaking topics into separate conversations rather than tackling everything at once to avoid overwhelm.",
+          },
+          {
+            id: "shared-goals",
+            title: "Discuss shared goals",
+            description: "Find common ground through your aspirations together.",
+            details:
+              "Start with what you both want to achieve:\n\n• **Personal goals**: Career ambitions, personal growth\n• **Lifestyle**: What type of lifestyle do you want to live?\n• **Living situation**: Rent long-term or buy? What size home?\n• **Money history**: 'How did your family talk about money when you were growing up?' Understanding each other's money backgrounds helps explain current attitudes and behaviors.",
+          },
+          {
+            id: "talk-income",
+            title: "Talk about income",
+            description: "Share your current financial situations openly.",
+            details:
+              "Discuss current income, employment stability, and career trajectory. Be transparent about salaries, bonuses, side income, and earning potential. This isn't about comparison—it's about understanding your combined resources and planning accordingly. Income disparities are common and manageable with the right approach.",
+          },
+          {
+            id: "talk-debt",
+            title: "Talk about debt",
+            description: "Discuss existing debts without judgment.",
+            details:
+              "Share all debts openly: student loans, credit cards, car loans, personal loans. Discuss the context:\n\n• **Why do you have this debt?** (Education and covering essential expenses vs. discretionary purchases)\n• **What's your plan for paying it down?** Understanding the 'why' helps frame the conversation constructively. Focus on creating a shared plan to address debt together.",
+          },
+          {
+            id: "decide-sharing",
+            title: "Decide what to share and how to share expenses",
+            description: "Determine how to split shared costs fairly.",
+            details:
+              "Focus on 'needs' like housing, food, utilities, and transportation. Two common approaches:\n\n• **Split equally (50/50)**: Each person pays half regardless of income\n• **Split proportionally**: Each person contributes based on their income percentage (e.g., if you earn 60% of combined income, you pay 60% of shared expenses)\n\nProportional splitting often works better when there's a significant income disparity. Choose what feels fair to both of you.",
+          },
+          {
+            id: "manage-conflict",
+            title: "Talk about how to manage future financial conflicts",
+            description: "Establish a framework for handling disagreements.",
+            details:
+              "Financial disagreements will happen—that's normal. Agree on how you'll handle them:\n\n• **Return to your shared goals**: Use them as a tiebreaker when you disagree\n• **Set spending limits**: Agree on amounts that need discussion (e.g., purchases over $200)\n• **Regular check-ins**: Schedule monthly money conversations to stay aligned\n• **No surprises**: Commit to transparency about financial decisions\n\nThe goal isn't to avoid conflict, but to have a healthy way to work through it together.",
+          },
+        ],
+      },
+      {
+        id: "before-marriage",
+        title: "💍 Before Marriage",
+        subtitle: "Important decisions to make before tying the knot",
+        colorScheme: "growth",
+        items: [
+          {
+            id: "talk-children",
+            title: "Talk about children",
+            description: "Discuss your plans and expectations around having kids.",
+            details:
+              "Have honest conversations about:\n\n• **How many children** do you want (if any)?\n• **Education preferences**: Private vs. public schools?\n• **College support**: Will you financially support them through college? How much?\n• **Timeline**: When do you want to start a family?\n• **Childcare approach**: Stay-at-home parent, daycare, or family help?\n\nThese decisions have massive financial implications. Once you're aligned, refer to the [Having Children Checklist](/checklist/having-children) for detailed financial planning.",
+          },
+          {
+            id: "what-to-keep-separate",
+            title: "Decide what to keep separate",
+            description: "Not everything needs to be combined immediately.",
+            details:
+              "Don't rush to combine all finances—many couples maintain some separation even after marriage. Consider:\n\n• **Joint account for shared expenses**, individual accounts for personal spending\n• **Keep separate until marriage**: Dating and engaged couples often benefit from maintaining financial independence\n• **Personal 'fun money'**: Agree on amounts each person can spend without discussion\n• **Consider a prenup**: Especially if there's significant wealth disparity, business ownership, children from previous relationships, or family assets to protect. This isn't pessimistic—it's practical.",
+          },
+        ],
+      },
+      {
+        id: "after-marriage",
+        title: "👰🤵 After Marriage",
+        subtitle: "Essential financial and legal updates",
+        colorScheme: "optimize",
+        items: [
+          {
+            id: "update-beneficiaries-marriage",
+            title: "Update beneficiaries on all accounts",
+            description: "Ensure your spouse is listed on retirement accounts, life insurance, etc.",
+            details:
+              "Review and update beneficiaries on:\n\n• Retirement accounts (401(k), IRA, Roth IRA)\n• Life insurance policies\n• Bank accounts and investment accounts\n• Payable-on-death (POD) designations\n\nBeneficiary designations supersede your will, so keeping them current is critical. Many people forget to do this and it can cause major issues later.",
+          },
+          {
+            id: "children-checklist-link",
+            title: "If you've decided to have children, follow the Having Children checklist",
+            description: "Complete financial planning for starting your family.",
+            details:
+              "Having children brings significant financial changes and responsibilities. Follow the [Having Children Checklist](/checklist/having-children) to ensure you're financially prepared for parenthood, including budgeting for child expenses, life insurance, 529 plans, estate planning, and more.",
+          },
+          {
+            id: "create-will-marriage",
+            title: "Create or update your will",
+            description: "Ensure your assets are distributed according to your wishes.",
+            details:
+              "Marriage changes your estate planning needs. Update or create a will that:\n\n• Names your spouse as primary beneficiary (if desired)\n• Specifies asset distribution\n• Names an executor\n• Addresses any children from previous relationships\n• Considers trusts if you have significant assets\n\nConsult an estate planning attorney for your specific situation, especially if you have complex assets or blended family considerations.",
+          },
+          {
+            id: "life-disability-insurance",
+            title: "Consider life and disability insurance",
+            description: "Especially critical in single-income households.",
+            details:
+              "Protect your family's financial future:\n\n• **Life insurance**: Term life insurance is typically most appropriate. Calculate coverage as 10-12x annual income of the insured. Both spouses should be insured—even a stay-at-home spouse provides significant economic value (childcare, household management).\n• **Disability insurance**: Protects income if you become unable to work. Particularly important for the primary earner or in single-income households.\n• **Single-income households**: These protections are absolutely critical when one person's income supports the entire family.",
+          },
+        ],
+      },
+    ],
+  },
 ];
