@@ -592,4 +592,227 @@ export const checklistData: Checklist[] = [
       },
     ],
   },
+  {
+    id: "preparing-old-age",
+    title: "Preparing for Old Age",
+    description: "Estate planning and end-of-life preparation",
+    subtitle: "Secure your legacy and protect your loved ones",
+    tags: ["estate planning", "will", "elderly", "retirement", "legacy", "power of attorney", "end of life"],
+    sections: [
+      {
+        id: "legal-estate-planning",
+        title: "🏛️ Legal and Estate Planning",
+        subtitle: "Establish your legal foundation",
+        colorScheme: "foundation",
+        items: [
+          {
+            id: "create-will",
+            title: "Create a Last Will and Testament",
+            description: "Legally document how you want your assets distributed.",
+            details:
+              "A will is the cornerstone of estate planning:\n\n• **Asset distribution**: Specify who gets what (property, money, possessions)\n• **Executor**: Name someone to carry out your wishes\n• **Guardian designation**: For minor children or dependents\n• **Digital assets**: Include instructions for online accounts, cryptocurrencies\n• **Update regularly**: After major life events (marriage, divorce, births, deaths)\n\n**Recommendation**: Before meeting with an estate attorney, draw out a flowchart showing exactly how you want inheritance to flow. Visual representation helps you think through scenarios (what if a beneficiary dies before you?) and makes it much easier to explain your wishes to your lawyer. Include backup beneficiaries and contingency plans.",
+          },
+          {
+            id: "estate-planning-attorney",
+            title: "Consult an estate planning attorney",
+            description: "Professional guidance ensures your plan is legally sound.",
+            details:
+              "Estate planning attorneys provide critical expertise:\n\n• **State-specific laws**: Requirements vary significantly by state\n• **Tax optimization**: Minimize estate taxes and maximize inheritance\n• **Complex situations**: Blended families, business ownership, significant assets\n• **Trust recommendations**: When trusts make sense for your situation\n• **Probate avoidance**: Strategies to simplify the process for heirs\n\n**Cost**: Typically $1,000-3,000 for comprehensive estate plan (will, trusts, POAs). Worth every penny for peace of mind and protecting your heirs from legal complications.",
+          },
+          {
+            id: "consider-trusts",
+            title: "Consider establishing trusts",
+            description: "Trusts can avoid probate and provide more control over asset distribution.",
+            details:
+              "Trusts offer advantages over wills alone:\n\n• **Revocable living trust**: Avoid probate, maintain control during lifetime, easier to update than will\n• **Irrevocable trust**: Reduce estate taxes, protect assets from creditors\n• **Special needs trust**: Care for disabled dependents without disqualifying them from government benefits\n• **Charitable trusts**: Support causes while reducing tax burden\n\n**When to consider**: Significant assets ($500k+), complex family situations, privacy concerns (trusts aren't public like probate), or desire to control distribution timing (e.g., distributions at certain ages).\n\n**Consult your estate attorney** - trust structure depends on your specific situation.",
+            isOptional: true,
+          },
+          {
+            id: "funeral-arrangements",
+            title: "Document funeral and burial preferences",
+            description: "Spare your loved ones from making difficult decisions during grief.",
+            details:
+              "Clarify your end-of-life wishes:\n\n• **Burial or cremation**: Specify your preference\n• **Funeral service**: Type of service, location, religious/secular preferences\n• **Burial plot**: If desired, purchase in advance (costs $1,000-4,000+)\n• **Prepaid funeral plan**: Optional—can lock in costs but research carefully (some companies go bankrupt)\n• **Cost planning**: Average funeral costs $7,000-12,000\n\nDocument everything in writing and discuss with family. Some include this in their will, others keep a separate document with more detail.",
+            isOptional: true,
+          },
+        ],
+      },
+      {
+        id: "powers-directives",
+        title: "⚖️ Powers of Attorney and Healthcare Directives",
+        subtitle: "Designate trusted decision-makers",
+        colorScheme: "foundation",
+        items: [
+          {
+            id: "financial-poa",
+            title: "Establish Financial Power of Attorney",
+            description: "Authorize someone to handle your finances if you can't.",
+            details:
+              "A Financial POA allows a trusted person to manage your money and property:\n\n• **What it covers**: Pay bills, manage investments, file taxes, handle banking, sell property if needed\n• **Types**: Immediate (effective now) vs. springing (activated upon incapacitation)\n• **Agent selection**: Choose someone financially responsible and trustworthy—spouse, adult child, or trusted advisor\n• **Multiple agents**: Can name co-agents or successor agents if first choice can't serve\n• **Limitations**: You can specify what they can/cannot do\n\n**Critical**: Without this, your family may need court approval (guardianship/conservatorship) to manage your finances—expensive and time-consuming process.",
+          },
+          {
+            id: "medical-poa",
+            title: "Establish Medical Power of Attorney (Healthcare Proxy)",
+            description: "Designate someone to make medical decisions if you're unable.",
+            details:
+              "A Medical POA (Healthcare Proxy) authorizes someone to make healthcare decisions on your behalf:\n\n• **When it activates**: Only when you can't communicate your wishes (unconscious, mentally incapacitated)\n• **Agent selection**: Choose someone who knows your values, can handle stress, and will respect your wishes even if they disagree\n• **Scope**: Decisions about treatments, procedures, care facilities, end-of-life care\n• **Different from Financial POA**: Select same or different person than Financial POA based on skills/strengths\n\n**Discuss your values** with your chosen agent: quality of life vs. longevity, acceptable risk levels, religious considerations, end-of-life preferences.",
+          },
+          {
+            id: "living-will",
+            title: "Create a Living Will (Advance Directive)",
+            description: "Document your end-of-life medical preferences in advance.",
+            details:
+              "A Living Will specifies what medical treatments you want or don't want:\n\n• **Life-sustaining treatments**: CPR, ventilators, feeding tubes, dialysis\n• **Palliative care**: Focus on comfort vs. life extension\n• **Scenarios**: Terminal illness, permanent unconsciousness, advanced dementia\n• **Pain management**: Your preferences for pain relief even if it shortens life\n• **Organ donation**: Specify your wishes regarding organ/tissue donation\n\n**Works with Medical POA**: Living Will provides guidance, Medical POA makes decisions in situations you didn't specifically address. Having both gives your family clarity and reduces guilt about difficult decisions.\n\n**Tip**: Review every few years—preferences may change as you age or experience health issues.",
+          },
+          {
+            id: "hipaa-authorization",
+            title: "Complete HIPAA authorization forms",
+            description: "Allow designated people to access your medical information.",
+            details:
+              "HIPAA laws protect medical privacy but can prevent family from getting information:\n\n• **Problem**: Even your Medical POA agent may not access medical records until you're incapacitated\n• **Solution**: HIPAA authorization forms allow named individuals to discuss your medical information with providers at any time\n• **Who to include**: Medical POA agent, family members who might help coordinate care, trusted friends\n• **When it matters**: During hospitalizations, researching care options, coordinating between specialists\n\nObtain forms from your doctors' offices and hospitals. Keep copies with your estate documents.",
+            isOptional: true,
+          },
+        ],
+      },
+      {
+        id: "beneficiaries-documentation",
+        title: "📋 Beneficiaries and Documentation",
+        subtitle: "Organize critical information for your heirs",
+        colorScheme: "growth",
+        items: [
+          {
+            id: "update-beneficiaries",
+            title: "Review and update all beneficiaries",
+            description: "Beneficiary designations override your will—keep them current.",
+            details:
+              "Beneficiary designations transfer assets outside of probate and supersede your will:\n\n**Update beneficiaries on:**\n• **Retirement accounts**: 401(k), 403(b), IRA, Roth IRA\n• **Life insurance policies**: All policies including group life through employer\n• **Bank/investment accounts**: POD (payable on death) or TOD (transfer on death) designations\n• **HSA**: Health Savings Account beneficiaries\n• **Annuities**: If you have any\n\n**Review annually** and after major life events (marriage, divorce, birth, death). Many people forget to update these, causing assets to go to ex-spouses, deceased parents, or unintended recipients.\n\n**Name contingent beneficiaries**: Backups if primary beneficiary predeceases you.",
+          },
+          {
+            id: "document-accounts-passwords",
+            title: "Record account information, PINs, and passwords",
+            description: "Create a master list of all financial accounts and access information.",
+            details:
+              "Your heirs will need access to your accounts—make it possible:\n\n**Document:**\n• **Bank accounts**: Institution names, account numbers, online login usernames (not passwords yet)\n• **Investment accounts**: Brokerage, retirement accounts, 529 plans\n• **Credit cards**: List all cards and institutions\n• **Insurance policies**: Life, health, auto, home, umbrella—policy numbers and agent contacts\n• **Loans/debts**: Mortgages, car loans, student loans, personal loans\n• **Utilities and subscriptions**: Services that need cancellation\n• **Digital assets**: Cryptocurrency wallets, online businesses, valuable digital accounts\n\n**Passwords and PINs**: Store separately in a secure location (safe deposit box, locked file, password manager with emergency access). Consider a password manager with emergency contact feature (1Password, LastPass) that releases access after verification period.\n\n**Update annually** as accounts change.",
+          },
+          {
+            id: "list-assets-debts",
+            title: "Create comprehensive asset and debt inventory",
+            description: "Document everything you own and owe.",
+            details:
+              "A complete inventory prevents assets from being lost and ensures debts are addressed:\n\n**Assets:**\n• **Real estate**: Properties you own, deeds location, mortgage information\n• **Vehicles**: Cars, boats, RVs—titles and loan information\n• **Bank/investment accounts**: Already documented, but include current approximate values\n• **Business ownership**: Partnership agreements, succession plans, business valuation\n• **Valuables**: Jewelry, art, collections, family heirlooms with significant value\n• **Storage units**: Locations and contents\n• **Safe deposit boxes**: Location, key location, contents list\n\n**Debts:**\n• All loans with balances, payment schedules, and account information\n• Note which debts have insurance (mortgage insurance, auto gap insurance)\n\nStore this with your estate documents and provide copy to executor.",
+          },
+          {
+            id: "organize-important-documents",
+            title: "Organize and store important documents securely",
+            description: "Make critical documents accessible to the right people.",
+            details:
+              "Your family will need various documents—organize them now:\n\n**Legal documents:**\n• Will, trusts, powers of attorney, healthcare directives\n• Birth certificate, marriage certificate, divorce decrees\n• Military discharge papers (DD-214) if applicable\n• Social Security card\n\n**Financial documents:**\n• Recent tax returns (7 years)\n• Insurance policies (life, health, property)\n• Property deeds and titles\n• Investment account statements\n\n**Storage recommendations:**\n• **Fireproof safe at home**: Copies of everything\n• **Safe deposit box**: Original will (or give to attorney), deeds, birth certificates\n• **Attorney's office**: Estate planning documents\n• **Tell executor/POA agents**: Where everything is located and how to access\n\n**Digital copies**: Scan everything and store encrypted backups in secure cloud storage with access instructions for executor.",
+            isOptional: true,
+          },
+          {
+            id: "write-letter-of-instruction",
+            title: "Write a Letter of Instruction to your heirs",
+            description: "Provide guidance beyond the legal documents.",
+            details:
+              "A Letter of Instruction (not legally binding but incredibly helpful) can include:\n\n• **Personal messages**: Final thoughts, explanations of your decisions\n• **Location of documents**: Where to find will, insurance policies, passwords\n• **Funeral wishes**: Detailed preferences beyond what's in official documents\n• **Asset explanations**: Why certain items go to certain people\n• **Instructions**: How to access accounts, who to contact, what to do first\n• **Personal property**: Who gets sentimental items not valuable enough for the will\n• **Digital assets**: Social media accounts, blogs, photo libraries—what to do with them\n\nKeep with estate documents and update as needed. This letter can save your family confusion, conflict, and stress during an already difficult time.",
+            isOptional: true,
+          },
+        ],
+      },
+      {
+        id: "long-term-care",
+        title: "🏥 Long-term Care Planning",
+        subtitle: "Prepare for potential care needs",
+        colorScheme: "growth",
+        items: [
+          {
+            id: "understand-medicare-medicaid",
+            title: "Understand Medicare and Medicaid coverage",
+            description: "Know what's covered and what isn't for long-term care.",
+            details:
+              "Most people misunderstand long-term care coverage:\n\n**Medicare:**\n• **What it covers**: Limited skilled nursing facility care (up to 100 days after hospital stay), home health under specific conditions\n• **What it doesn't cover**: Long-term custodial care (help with daily living), most nursing home costs, assisted living\n• **Reality**: Medicare covers very little long-term care\n\n**Medicaid:**\n• **What it covers**: Nursing home care, some home care services\n• **Eligibility**: Must have very limited assets (typically $2,000 or less) and meet income requirements\n• **Planning**: Some people spend down assets to qualify, but rules are complex (5-year lookback period)\n\n**The gap**: Most long-term care must be paid out-of-pocket or through long-term care insurance. Average nursing home costs $100,000-120,000/year.",
+          },
+          {
+            id: "long-term-care-insurance",
+            title: "Consider long-term care insurance",
+            description: "Evaluate whether LTC insurance makes sense for your situation.",
+            details:
+              "Long-term care insurance covers extended care needs:\n\n**What it covers:**\n• Nursing home care ($80,000-120,000/year)\n• Assisted living facility ($48,000-72,000/year)\n• In-home care ($25-30/hour, 24/7 = $200,000+/year)\n• Adult day care services\n\n**Insurance costs:**\n• Age 55: $2,000-3,000/year\n• Age 65: $3,500-5,500/year\n• Costs increase as you age; premiums can increase over time\n\n**Who should consider:**\n• Assets between $200,000-2,000,000 (too much to qualify for Medicaid, not enough to easily self-fund care)\n• Family history of conditions requiring long-term care (dementia, Alzheimer's, stroke)\n• No family members able/willing to provide care\n\n**Who should skip:**\n• Can't afford premiums long-term\n• Significant assets (can self-fund)\n• Very limited assets (will qualify for Medicaid)\n\n**Best purchase age**: 55-60 years old—younger = cheaper premiums but paying longer; older = more expensive or might not qualify.\n\n**Alternative**: Hybrid life/LTC policies (life insurance with LTC rider) or self-insuring with dedicated investments.",
+            branches: {
+              question: "What's your approach to long-term care funding?",
+              options: [
+                { label: "Purchase LTC insurance" },
+                { label: "Self-insure with investments" },
+                { label: "Plan to qualify for Medicaid if needed" },
+                { label: "Hybrid policy (life insurance + LTC rider)" },
+              ],
+            },
+            isOptional: true,
+          },
+          {
+            id: "research-care-options",
+            title: "Research care options in your area",
+            description: "Know what's available before you need it.",
+            details:
+              "Understanding your options reduces stress when decisions need to be made:\n\n**Home care:**\n• Family caregivers (most common, hardest on family)\n• Hired caregivers ($25-30/hour)\n• Home healthcare agencies (more expensive but more professional)\n\n**Community-based:**\n• Adult day care centers ($70-100/day)\n• Senior centers with programs and meals\n\n**Residential options:**\n• Independent living ($2,000-4,000/month) - apartment style, minimal services\n• Assisted living ($3,500-6,500/month) - help with daily activities\n• Nursing homes ($7,000-10,000+/month) - 24/7 skilled nursing care\n• Memory care ($5,000-9,000/month) - specialized for dementia/Alzheimer's\n• Continuing care retirement community (CCRC) - all levels of care in one place, requires large upfront deposit ($100,000-1,000,000+)\n\n**Research now**: Tour facilities, understand costs, get on waitlists if necessary for preferred facilities. Quality varies dramatically—research before you need it urgently.",
+            isOptional: true,
+          },
+          {
+            id: "discuss-preferences-with-family",
+            title: "Discuss care preferences with family",
+            description: "Have honest conversations about your wishes for aging care.",
+            details:
+              "Don't leave your family guessing about your preferences:\n\n**Topics to discuss:**\n• **Where do you want to age?**: Home as long as possible, assisted living, nursing home?\n• **Who might provide care?**: Expectations about family caregiving\n• **Financial limits**: How much are you willing to spend? What assets can be used?\n• **Quality of life priorities**: Independence vs. safety, social engagement, specific concerns\n• **Decision-making**: Who should make decisions if you can't?\n\n**Reality check**: What you want may not be financially or physically possible. Discuss realistic scenarios and backup plans.\n\n**For adult children**: Don't assume you'll be your parents' caregiver without discussing capabilities, willingness, and impact on your life. It's okay to say you can't do it—better to be honest now than resentful later.",
+            isOptional: true,
+          },
+        ],
+      },
+      {
+        id: "financial-security",
+        title: "💰 Financial Security Review",
+        subtitle: "Ensure your finances are in order",
+        colorScheme: "optimize",
+        items: [
+          {
+            id: "review-retirement-income",
+            title: "Review retirement income streams",
+            description: "Verify you have sufficient income for your needs.",
+            details:
+              "Identify all income sources in retirement:\n\n• **Social Security**: Maximize by delaying to age 70 if possible (8% increase per year from 67-70)\n• **Pensions**: If you have them, understand payment options (life only vs. joint and survivor)\n• **Retirement accounts**: 401(k), IRA, Roth IRA—understand withdrawal strategies and required minimum distributions (RMDs)\n• **Investment income**: Dividends, interest, rental income\n• **Part-time work**: Some retirees continue working part-time\n• **Annuities**: If you have any, understand payout terms\n\n**Calculate total**: Does it cover your expected expenses plus healthcare and unexpected costs? If not, consider working longer, reducing expenses, or adjusting retirement expectations.\n\n**Withdrawal strategy**: Common rule is 4% of retirement savings per year, adjusted for inflation. Consult a fee-only financial planner for personalized guidance.",
+          },
+          {
+            id: "plan-estate-taxes",
+            title: "Plan for potential estate taxes",
+            description: "Understand if your estate will owe taxes and plan accordingly.",
+            details:
+              "Estate tax planning for larger estates:\n\n**Federal estate tax (2024):**\n• **Exemption**: $13.61 million per person ($27.22 million per married couple)\n• **Tax rate**: 40% on amounts above exemption\n• **Sunset provision**: Exemption may drop to ~$7 million per person in 2026 unless Congress acts\n\n**State estate taxes:**\n• 12 states + DC have estate taxes with much lower exemptions ($1-6 million)\n• 6 states have inheritance taxes (paid by heirs, not estate)\n\n**If you're near the exemption:**\n• **Gifting strategies**: Annual gift exclusion ($18,000/person in 2024), lifetime gifting\n• **Trusts**: Irrevocable life insurance trusts, charitable trusts, family limited partnerships\n• **Life insurance**: Can provide liquidity to pay estate taxes\n• **Consult attorney**: Estate tax planning is complex and state-specific\n\n**Most people**: Don't need to worry about federal estate tax, but check your state laws.",
+            isOptional: true,
+          },
+          {
+            id: "consolidate-simplify",
+            title: "Consolidate and simplify financial accounts",
+            description: "Make it easier for you and your heirs to manage finances.",
+            details:
+              "As you age, simplification reduces stress and errors:\n\n**Consolidation opportunities:**\n• **Multiple IRAs**: Roll old 401(k)s and multiple IRAs into one or two accounts\n• **Bank accounts**: Close unused accounts, consolidate to one or two banks\n• **Credit cards**: Keep 2-3 you actually use, close the rest (but be mindful of credit score impact)\n• **Brokerage accounts**: Consolidate to one or two providers\n\n**Benefits:**\n• Easier to track and manage\n• Simpler required minimum distributions (RMDs)\n• Less paperwork and statements\n• Much easier for heirs/executor to settle estate\n• Reduced risk of forgotten accounts\n\n**Before consolidating**: Ensure you're not triggering taxes, losing better investment options, or giving up valuable benefits (e.g., some old 401(k)s have better loan provisions or lower-cost institutional funds).",
+            isOptional: true,
+          },
+          {
+            id: "review-insurance",
+            title: "Review all insurance coverage",
+            description: "Ensure appropriate coverage for your stage of life.",
+            details:
+              "Insurance needs change as you age:\n\n**Life insurance:**\n• If children are independent and debts paid off, you may not need it\n• Keep enough to cover estate taxes, final expenses, or income for surviving spouse\n• If you have permanent policy (whole/universal life), review if it still makes sense\n\n**Health insurance:**\n• Medicare enrollment at 65 is critical—missing deadlines causes permanent penalties\n• Medigap or Medicare Advantage to fill coverage gaps\n• Part D prescription drug coverage\n\n**Disability insurance:**\n• Often not needed in retirement, can cancel once fully retired\n\n**Long-term care insurance:**\n• Discussed in previous section\n\n**Umbrella liability:**\n• $1-5 million coverage costs $200-500/year\n• Protects assets from lawsuits\n• Still valuable in retirement if you have assets to protect\n\n**Property/auto insurance:**\n• Review coverage levels—still adequate?\n• Bundle for discounts\n• Consider increasing deductibles to lower premiums if you have emergency fund\n\nReview annually and after major life changes.",
+          },
+          {
+            id: "charitable-giving",
+            title: "Plan charitable giving strategy",
+            description: "Maximize tax benefits while supporting causes you care about.",
+            details:
+              "Strategic charitable giving in retirement:\n\n**Qualified Charitable Distributions (QCDs):**\n• Age 70½+: Donate up to $105,000/year directly from IRA to charity\n• **Benefit**: Satisfies RMD without increasing taxable income\n• **Best use**: When you don't need your full RMD for expenses\n\n**Donor-Advised Funds (DAFs):**\n• Contribute large sum in one year (stock, appreciated assets) for big tax deduction\n• Distribute to charities over multiple years\n• Good strategy in high-income year before retirement\n\n**Charitable Remainder Trust:**\n• Receive income for life, remainder goes to charity\n• Immediate tax deduction, remove appreciated assets from estate\n• Complex but powerful for large estates\n\n**Appreciated securities:**\n• Donate appreciated stock/funds instead of cash\n• Avoid capital gains tax, get deduction for full fair market value\n\n**Bequests in will:**\n• Leave specific amounts or percentage of estate to charities\n• Reduces taxable estate\n\nConsult tax advisor or estate attorney for personalized strategy.",
+            isOptional: true,
+          },
+        ],
+      },
+    ],
+  },
 ];
