@@ -203,7 +203,7 @@ export const checklistData: Checklist[] = [
       },
       {
         id: "after-birth",
-        title: "After Child is Born",
+        title: "After Having Children",
         subtitle: "Essential financial steps for new parents",
         colorScheme: "growth",
         items: [
