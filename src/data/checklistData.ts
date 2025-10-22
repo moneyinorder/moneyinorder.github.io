@@ -19,7 +19,7 @@ export interface Checklist {
 export const checklistData: Checklist[] = [
   {
     id: "personal-finance",
-    title: "Personal Finance Checklist",
+    title: "Personal Finance",
     description: "Your roadmap to financial freedom",
     subtitle: "Build your financial foundation step by step",
     sections: [
@@ -165,7 +165,7 @@ export const checklistData: Checklist[] = [
   },
   {
     id: "having-children",
-    title: "Having Children Checklist",
+    title: "Having Children",
     description: "Financial preparation for parenthood",
     subtitle: "Plan ahead for your growing family",
     sections: [
