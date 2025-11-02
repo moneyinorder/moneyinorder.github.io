@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { TrendingUp, Home, AlertCircle, Info, ArrowLeft } from "lucide-react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line, Area, AreaChart } from "recharts";
 import { useNavigate } from "react-router-dom";
 
 export default function CalculatorPage() {
@@ -115,6 +115,82 @@ export default function CalculatorPage() {
       fill: "hsl(var(--chart-2))"
     }
   ] : [];
+
+  // Generate timeline data for progression chart
+  const generateTimelineData = () => {
+    if (!result) return [];
+
+    const principal = parseFloat(debtAmount);
+    const rate = parseFloat(interestRate) / 100;
+    const years = parseFloat(termYears);
+    const monthly = parseFloat(monthlySavings);
+    const invReturn = parseFloat(investmentReturn) / 100;
+    const tax = parseFloat(taxRate) / 100 || 0;
+
+    if (!principal || !rate || !years || !monthly || !invReturn) return [];
+
+    const months = years * 12;
+    const monthlyRate = rate / 12;
+    const invMonthlyRate = invReturn / 12;
+    const minPayment = principal * (monthlyRate * Math.pow(1 + monthlyRate, months)) / 
+                       (Math.pow(1 + monthlyRate, months) - 1);
+    const extraForInvesting = monthly - minPayment;
+
+    const timelineData = [];
+    let investingBalance = 0;
+    let remainingDebt1 = principal;
+    let debtBalance = principal;
+    let savingsBalance = 0;
+    let debtPaidOff = false;
+
+    // Sample every 12 months for visualization
+    for (let i = 0; i <= months; i += 12) {
+      const year = i / 12;
+      
+      // Calculate investing strategy balance at this point
+      let tempInvestingBalance = 0;
+      let tempRemainingDebt = principal;
+      for (let j = 0; j < i; j++) {
+        const interest = tempRemainingDebt * monthlyRate * (1 - tax);
+        const principalPayment = minPayment - (tempRemainingDebt * monthlyRate);
+        tempRemainingDebt -= principalPayment;
+        if (extraForInvesting > 0) {
+          tempInvestingBalance = (tempInvestingBalance + extraForInvesting) * (1 + invMonthlyRate);
+        }
+      }
+
+      // Calculate debt payoff strategy balance at this point
+      let tempDebtBalance = principal;
+      let tempSavingsBalance = 0;
+      let tempDebtPaidOff = false;
+      for (let j = 0; j < i; j++) {
+        if (!tempDebtPaidOff && tempDebtBalance > 0) {
+          const interest = tempDebtBalance * monthlyRate * (1 - tax);
+          const principalPayment = Math.min(monthly - interest, tempDebtBalance);
+          tempDebtBalance -= principalPayment;
+          const leftover = monthly - interest - principalPayment;
+          if (leftover > 0) {
+            tempSavingsBalance = (tempSavingsBalance + leftover) * (1 + invMonthlyRate);
+          }
+          if (tempDebtBalance <= 0) {
+            tempDebtPaidOff = true;
+          }
+        } else {
+          tempSavingsBalance = (tempSavingsBalance + monthly) * (1 + invMonthlyRate);
+        }
+      }
+
+      timelineData.push({
+        year: year,
+        investing: Math.round(tempInvestingBalance),
+        payingDebt: Math.round(tempSavingsBalance)
+      });
+    }
+
+    return timelineData;
+  };
+
+  const timelineData = generateTimelineData();
 
   return (
     <div className="min-h-screen bg-background">
@@ -234,13 +310,68 @@ export default function CalculatorPage() {
             <>
               <Card>
                 <CardHeader>
-                  <CardTitle>Visual Comparison</CardTitle>
+                  <CardTitle>Wealth Progression Over Time</CardTitle>
+                  <CardDescription>How your wealth grows with each strategy</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ResponsiveContainer width="100%" height={350}>
+                    <AreaChart data={timelineData}>
+                      <defs>
+                        <linearGradient id="colorInvesting" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.8}/>
+                          <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0}/>
+                        </linearGradient>
+                        <linearGradient id="colorPayingDebt" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="hsl(var(--chart-2))" stopOpacity={0.8}/>
+                          <stop offset="95%" stopColor="hsl(var(--chart-2))" stopOpacity={0}/>
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
+                      <XAxis 
+                        dataKey="year" 
+                        label={{ value: 'Years', position: 'insideBottom', offset: -5 }}
+                      />
+                      <YAxis 
+                        tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                        label={{ value: 'Total Wealth', angle: -90, position: 'insideLeft' }}
+                      />
+                      <Tooltip 
+                        formatter={(value: number) => `$${value.toLocaleString(undefined, { maximumFractionDigits: 0 })}`}
+                        labelFormatter={(label) => `Year ${label}`}
+                      />
+                      <Legend />
+                      <Area 
+                        type="monotone" 
+                        dataKey="investing" 
+                        stroke="hsl(var(--primary))" 
+                        fillOpacity={1} 
+                        fill="url(#colorInvesting)" 
+                        name="Investing Strategy"
+                        strokeWidth={2}
+                      />
+                      <Area 
+                        type="monotone" 
+                        dataKey="payingDebt" 
+                        stroke="hsl(var(--chart-2))" 
+                        fillOpacity={1} 
+                        fill="url(#colorPayingDebt)" 
+                        name="Debt Payoff Strategy"
+                        strokeWidth={2}
+                      />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Final Comparison</CardTitle>
                   <CardDescription>After {termYears} years</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ResponsiveContainer width="100%" height={300}>
                     <BarChart data={chartData}>
-                      <CartesianGrid strokeDasharray="3 3" />
+                      <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
                       <XAxis dataKey="name" />
                       <YAxis 
                         tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
