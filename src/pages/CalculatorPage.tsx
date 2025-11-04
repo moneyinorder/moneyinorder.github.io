@@ -242,6 +242,7 @@ export default function CalculatorPage() {
                     placeholder="300000"
                     value={debtAmount}
                     onChange={(e) => setDebtAmount(e.target.value)}
+                    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                 </div>
 
@@ -254,6 +255,7 @@ export default function CalculatorPage() {
                     placeholder="6.5"
                     value={interestRate}
                     onChange={(e) => setInterestRate(e.target.value)}
+                    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                 </div>
 
@@ -265,6 +267,7 @@ export default function CalculatorPage() {
                     placeholder="30"
                     value={termYears}
                     onChange={(e) => setTermYears(e.target.value)}
+                    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                 </div>
 
@@ -276,6 +279,7 @@ export default function CalculatorPage() {
                     placeholder="3000"
                     value={monthlySavings}
                     onChange={(e) => setMonthlySavings(e.target.value)}
+                    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                 </div>
 
@@ -288,6 +292,7 @@ export default function CalculatorPage() {
                     placeholder="8"
                     value={investmentReturn}
                     onChange={(e) => setInvestmentReturn(e.target.value)}
+                    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                 </div>
 
@@ -300,6 +305,7 @@ export default function CalculatorPage() {
                     placeholder="25"
                     value={taxRate}
                     onChange={(e) => setTaxRate(e.target.value)}
+                    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                 </div>
               </div>
@@ -308,61 +314,6 @@ export default function CalculatorPage() {
 
           {result && (
             <>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Wealth Progression Over Time</CardTitle>
-                  <CardDescription>How your wealth grows with each strategy</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ResponsiveContainer width="100%" height={350}>
-                    <AreaChart data={timelineData}>
-                      <defs>
-                        <linearGradient id="colorInvesting" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.8}/>
-                          <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0}/>
-                        </linearGradient>
-                        <linearGradient id="colorPayingDebt" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="hsl(var(--chart-2))" stopOpacity={0.8}/>
-                          <stop offset="95%" stopColor="hsl(var(--chart-2))" stopOpacity={0}/>
-                        </linearGradient>
-                      </defs>
-                      <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
-                      <XAxis 
-                        dataKey="year" 
-                        label={{ value: 'Years', position: 'insideBottom', offset: -5 }}
-                      />
-                      <YAxis 
-                        tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
-                        label={{ value: 'Total Wealth', angle: -90, position: 'insideLeft' }}
-                      />
-                      <Tooltip 
-                        formatter={(value: number) => `$${value.toLocaleString(undefined, { maximumFractionDigits: 0 })}`}
-                        labelFormatter={(label) => `Year ${label}`}
-                      />
-                      <Legend />
-                      <Area 
-                        type="monotone" 
-                        dataKey="investing" 
-                        stroke="hsl(var(--primary))" 
-                        fillOpacity={1} 
-                        fill="url(#colorInvesting)" 
-                        name="Investing Strategy"
-                        strokeWidth={2}
-                      />
-                      <Area 
-                        type="monotone" 
-                        dataKey="payingDebt" 
-                        stroke="hsl(var(--chart-2))" 
-                        fillOpacity={1} 
-                        fill="url(#colorPayingDebt)" 
-                        name="Debt Payoff Strategy"
-                        strokeWidth={2}
-                      />
-                    </AreaChart>
-                  </ResponsiveContainer>
-                </CardContent>
-              </Card>
-
               <Card>
                 <CardHeader>
                   <CardTitle>Final Comparison</CardTitle>
