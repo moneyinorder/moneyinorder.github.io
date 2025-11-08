@@ -80,10 +80,6 @@ export const checklistData: Checklist[] = [
             description: "Take advantage of tax-advantaged retirement accounts.",
             details:
               "For 2024, you can contribute up to $7,000 ($8,000 if 50+) to an IRA or Roth IRA. Traditional IRA contributions may be tax-deductible, while Roth IRA contributions are after-tax but grow tax-free. If you're over the Roth income limit, consider a backdoor Roth IRA conversion.",
-            branches: {
-              question: "Which IRA type is best for you?",
-              options: [{ label: "Traditional IRA (tax deduction now)" }, { label: "Roth IRA (tax-free growth)" }],
-            },
           },
           {
             id: "large-expenses",
@@ -114,10 +110,6 @@ export const checklistData: Checklist[] = [
             details:
               "HSAs offer tax-deductible contributions, tax-free growth, and tax-free withdrawals for qualified medical expenses. In 2024, you can contribute up to $4,150 (individual) or $8,300 (family). This is one of the most powerful tax-advantaged accounts available.",
             isOptional: true,
-            branches: {
-              question: "Do you have a high-deductible health plan?",
-              options: [{ label: "Yes" }, { label: "No, not eligible" }],
-            },
           },
           {
             id: "529-plan",
@@ -126,10 +118,6 @@ export const checklistData: Checklist[] = [
             details:
               "529 plans offer tax-free growth for education expenses. Many states offer tax deductions for contributions. You can also use it for K-12 tuition (up to $10,000/year) and qualified student loan repayments.",
             isOptional: true,
-            branches: {
-              question: "Do you have children or plan to?",
-              options: [{ label: "Yes" }, { label: "No, skip this" }],
-            },
           },
           {
             id: "max-401k",
@@ -473,10 +461,6 @@ export const checklistData: Checklist[] = [
             description: "Both options have different costs and considerations.",
             details:
               "**Adoption (Shelter/Rescue):**\n• **Pros**: Lower cost ($50-500), saves a life, often includes spay/neuter and initial vaccines, adult temperament known\n• **Cons**: Unknown health history, may have behavioral issues, less choice in age/breed\n\n**Reputable Breeder:**\n• **Pros**: Known health history, predictable temperament, can choose specific breed, puppy/kitten from birth\n• **Cons**: Much more expensive ($1,000-3,000+), doesn't help shelter animals, wait lists common\n\n**Avoid pet stores and puppy mills** - they often source from inhumane breeding operations and dogs may have serious health/behavioral problems.",
-            branches: {
-              question: "Which path are you considering?",
-              options: [{ label: "Adopting from shelter/rescue" }, { label: "Buying from breeder" }],
-            },
           },
           {
             id: "vet-initial-exam",
@@ -556,14 +540,6 @@ export const checklistData: Checklist[] = [
             description: "Weigh the pros and cons carefully for your situation.",
             details:
               "**Pet Insurance:**\n• **Cost**: $30-100/month depending on age, breed, coverage\n• **Pros**: Covers major emergencies (surgeries, cancer treatment, accidents), peace of mind, no need for large emergency fund\n• **Cons**: Monthly cost adds up ($360-1,200/year), many exclusions, pre-existing conditions not covered, deductibles and co-pays apply, premiums increase with age\n• **Best for**: Breeds prone to expensive conditions, owners without emergency fund\n\n**Self-Insurance (Investment Account):**\n• **Strategy**: Invest what insurance would cost in index funds\n• **Pros**: You keep unused money, investment growth, no claim denials, covers any pet need including end-of-life care\n• **Cons**: Requires discipline, need emergency fund first, early emergency could deplete fund\n• **Best for**: Multiple pets, healthy breeds, those with emergency fund\n\n**Hybrid approach**: Basic accident-only insurance ($15-30/month) + investment account for illness and routine care.",
-            branches: {
-              question: "What's your approach?",
-              options: [
-                { label: "Get comprehensive pet insurance" },
-                { label: "Self-insure with investment account" },
-                { label: "Hybrid: Basic insurance + savings" },
-              ],
-            },
           },
           {
             id: "plan-end-of-life",
@@ -738,15 +714,6 @@ export const checklistData: Checklist[] = [
             description: "Evaluate whether LTC insurance makes sense for your situation.",
             details:
               "Long-term care insurance covers extended care needs:\n\n**What it covers:**\n• Nursing home care ($80,000-120,000/year)\n• Assisted living facility ($48,000-72,000/year)\n• In-home care ($25-30/hour, 24/7 = $200,000+/year)\n• Adult day care services\n\n**Insurance costs:**\n• Age 55: $2,000-3,000/year\n• Age 65: $3,500-5,500/year\n• Costs increase as you age; premiums can increase over time\n\n**Who should consider:**\n• Assets between $200,000-2,000,000 (too much to qualify for Medicaid, not enough to easily self-fund care)\n• Family history of conditions requiring long-term care (dementia, Alzheimer's, stroke)\n• No family members able/willing to provide care\n\n**Who should skip:**\n• Can't afford premiums long-term\n• Significant assets (can self-fund)\n• Very limited assets (will qualify for Medicaid)\n\n**Best purchase age**: 55-60 years old—younger = cheaper premiums but paying longer; older = more expensive or might not qualify.\n\n**Alternative**: Hybrid life/LTC policies (life insurance with LTC rider) or self-insuring with dedicated investments.",
-            branches: {
-              question: "What's your approach to long-term care funding?",
-              options: [
-                { label: "Purchase LTC insurance" },
-                { label: "Self-insure with investments" },
-                { label: "Plan to qualify for Medicaid if needed" },
-                { label: "Hybrid policy (life insurance + LTC rider)" },
-              ],
-            },
             isOptional: true,
           },
           {
