@@ -364,7 +364,14 @@ export const checklistData: Checklist[] = [
             title: "Decide what to keep separate",
             description: "Not everything needs to be combined immediately.",
             details:
-              "Don't rush to combine all finances - many couples maintain some separation even after marriage. Consider:\n\n• **Joint account for shared expenses**, individual accounts for personal spending\n• **Keep separate until marriage**: Dating and engaged couples often benefit from maintaining financial independence\n• **Personal 'fun money'**: Agree on amounts each person can spend without discussion\n• **Consider a prenup**: Especially if there's significant wealth disparity, business ownership, children from previous relationships, or family assets to protect.",
+              "Don't rush to combine all finances - many couples maintain some separation even after marriage. Consider:\n\n• **Joint account for shared expenses**, individual accounts for personal spending\n• **Keep separate until marriage**: Dating and engaged couples often benefit from maintaining financial independence\n• **Personal 'fun money'**: Agree on amounts each person can spend without discussion\n", 
+          },
+          {
+            id: "talk-prenup",
+            title: "Consider a prenup",
+            description: " Especially if there's significant wealth disparity, business ownership, children from previous relationships, or family assets to protect.",
+            details:
+              "A prenuptial agreement can protect both parties and clarify financial expectations. It doesn't mean you expect divorce - it's a practical tool for transparency and shows that you care about each other's future selves. Discuss openly:\n\n• **What assets need protection?** Family businesses, inheritances, etc.\n• **Debt responsibility**: Who is responsible for pre-existing debts?\n• Consult a family law attorney to draft an agreement that meets both your needs.", 
           },
         ],
       },
