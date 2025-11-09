@@ -228,14 +228,14 @@ export const checklistData: Checklist[] = [
             title: "Enroll in Dependent Care FSA",
             description: "Save pre-tax dollars for childcare expenses.",
             details:
-              "A Dependent Care FSA allows you to set aside up to $5,000/year (per household) pre-tax for qualified childcare expenses. This covers daycare, preschool, before/after school care, and summer day camps. Calculate carefully—unused funds are forfeited at year-end.",
+              "A Dependent Care FSA allows you to set aside up to $5,000/year (per household) pre-tax for qualified childcare expenses. This covers daycare, preschool, before/after school care, and summer day camps. Calculate carefully - unused funds are forfeited at year-end.",
           },
           {
             id: "529-plan",
             title: "Open a 529 college savings plan",
             description: "Start saving for education expenses with tax-free growth.",
             details:
-              "529 plans offer tax-free growth for education expenses. You can use any state's plan, though your state may offer tax deductions for contributions. Start with automatic monthly contributions—even $50-100/month adds up over 18 years due to compound growth. Grandparents can also contribute.",
+              "529 plans offer tax-free growth for education expenses. You can use any state's plan, though your state may offer tax deductions for contributions. Start with automatic monthly contributions - even $50-100/month adds up over 18 years due to compound growth. Grandparents can also contribute.",
           },
           {
             id: "estate-planning-docs",
@@ -273,7 +273,7 @@ export const checklistData: Checklist[] = [
             title: "Teach financial literacy",
             description: "Help your children develop healthy money habits.",
             details:
-              "The most valuable gift is financial education. Teach budgeting with allowance, the power of compound interest, needs vs. wants, and responsible credit card use. Consider opening a custodial brokerage account to teach investing. Start age-appropriate conversations early—even young children can learn about saving and delayed gratification.",
+              "The most valuable gift is financial education. Teach budgeting with allowance, the power of compound interest, needs vs. wants, and responsible credit card use. Consider opening a custodial brokerage account to teach investing. Start age-appropriate conversations early - even young children can learn about saving and delayed gratification.",
             isOptional: true,
           },
           {
@@ -281,7 +281,7 @@ export const checklistData: Checklist[] = [
             title: "Consider UTMA/UGMA custodial accounts",
             description: "For flexibility beyond education expenses.",
             details:
-              "Unlike 529 plans (education only), UTMA/UGMA accounts can fund anything for the child's benefit—first car, wedding, home down payment. However, these are taxable accounts and become the child's property at age 18-21 (state dependent). Contribute after maxing 529 if you want more flexibility.",
+              "Unlike 529 plans (education only), UTMA/UGMA accounts can fund anything for the child's benefit - first car, wedding, home down payment. However, these are taxable accounts and become the child's property at age 18-21 (state dependent). Contribute after maxing 529 if you want more flexibility.",
             isOptional: true,
           },
         ],
@@ -306,7 +306,7 @@ export const checklistData: Checklist[] = [
             title: "Set the stage for financial conversations",
             description: "Create a safe, non-judgmental space to discuss money.",
             details:
-              "Start by expressing care: 'I care about you and want us to succeed financially together.' Acknowledge that personal finance wasn't taught in school—it's a skill you're building together. There's no shame in not knowing everything. Consider breaking topics into separate conversations rather than tackling everything at once to avoid overwhelm.",
+              "Start by expressing care: 'I care about you and want us to succeed financially together.' Acknowledge that personal finance wasn't taught in school - it's a skill you're building together. There's no shame in not knowing everything. Consider breaking topics into separate conversations rather than tackling everything at once to avoid overwhelm.",
           },
           {
             id: "shared-goals",
@@ -320,7 +320,7 @@ export const checklistData: Checklist[] = [
             title: "Talk about income",
             description: "Share your current financial situations openly.",
             details:
-              "Discuss current income, employment stability, and career trajectory. Be transparent about salaries, bonuses, side income, and earning potential. This isn't about comparison—it's about understanding your combined resources and planning accordingly. Income disparities are common and manageable with the right approach.",
+              "Discuss current income, employment stability, and career trajectory. Be transparent about salaries, bonuses, side income, and earning potential. This isn't about comparison - it's about understanding your combined resources and planning accordingly. Income disparities are common and manageable with the right approach.",
           },
           {
             id: "talk-debt",
@@ -341,7 +341,7 @@ export const checklistData: Checklist[] = [
             title: "Talk about how to manage future financial conflicts",
             description: "Establish a framework for handling disagreements.",
             details:
-              "Financial disagreements will happen—that's normal. Agree on how you'll handle them:\n\n• **Return to your shared goals**: Use them as a tiebreaker when you disagree\n• **Set spending limits**: Agree on amounts that need discussion (e.g., purchases over $200)\n• **Regular check-ins**: Schedule monthly money conversations to stay aligned\n• **No surprises**: Commit to transparency about financial decisions\n\nThe goal isn't to avoid conflict, but to have a healthy way to work through it together.",
+              "Financial disagreements will happen, and that's normal. Agree on how you'll handle them:\n\n• **Return to your shared goals**: Use them as a tiebreaker when you disagree\n• **Set spending limits**: Agree on amounts that need discussion (e.g., purchases over $200)\n• **Regular check-ins**: Schedule monthly money conversations to stay aligned\n• **No surprises**: Commit to transparency about financial decisions\n\nThe goal isn't to avoid conflict, but to have a healthy way to work through it together.",
           },
         ],
       },
@@ -364,7 +364,7 @@ export const checklistData: Checklist[] = [
             title: "Decide what to keep separate",
             description: "Not everything needs to be combined immediately.",
             details:
-              "Don't rush to combine all finances—many couples maintain some separation even after marriage. Consider:\n\n• **Joint account for shared expenses**, individual accounts for personal spending\n• **Keep separate until marriage**: Dating and engaged couples often benefit from maintaining financial independence\n• **Personal 'fun money'**: Agree on amounts each person can spend without discussion\n• **Consider a prenup**: Especially if there's significant wealth disparity, business ownership, children from previous relationships, or family assets to protect. This isn't pessimistic—it's practical.",
+              "Don't rush to combine all finances - many couples maintain some separation even after marriage. Consider:\n\n• **Joint account for shared expenses**, individual accounts for personal spending\n• **Keep separate until marriage**: Dating and engaged couples often benefit from maintaining financial independence\n• **Personal 'fun money'**: Agree on amounts each person can spend without discussion\n• **Consider a prenup**: Especially if there's significant wealth disparity, business ownership, children from previous relationships, or family assets to protect.",
           },
         ],
       },
@@ -393,7 +393,7 @@ export const checklistData: Checklist[] = [
             title: "Consider life and disability insurance",
             description: "Especially critical in single-income households.",
             details:
-              "Protect your family's financial future:\n\n• **Life insurance**: Term life insurance is typically most appropriate. Calculate coverage as 10-12x annual income of the insured. Both spouses should be insured—even a stay-at-home spouse provides significant economic value (childcare, household management).\n• **Disability insurance**: Protects income if you become unable to work. Particularly important for the primary earner or in single-income households.\n• **Single-income households**: These protections are absolutely critical when one person's income supports the entire family.",
+              "Protect your family's financial future:\n\n• **Life insurance**: Term life insurance is typically most appropriate. Calculate coverage as 10-12x annual income of the insured. Both spouses should be insured - even a stay-at-home spouse provides significant economic value (childcare, household management).\n• **Disability insurance**: Protects income if you become unable to work. Particularly important for the primary earner or in single-income households.\n• **Single-income households**: These protections are absolutely critical when one person's income supports the entire family.",
           },
           {
             id: "children-checklist-link",
@@ -599,7 +599,7 @@ export const checklistData: Checklist[] = [
             title: "Document funeral and burial preferences",
             description: "Spare your loved ones from making difficult decisions during grief.",
             details:
-              "Clarify your end-of-life wishes:\n\n• **Burial or cremation**: Specify your preference\n• **Funeral service**: Type of service, location, religious/secular preferences\n• **Burial plot**: If desired, purchase in advance (costs $1,000-4,000+)\n• **Prepaid funeral plan**: Optional—can lock in costs but research carefully (some companies go bankrupt)\n• **Cost planning**: Average funeral costs $7,000-12,000\n\nDocument everything in writing and discuss with family. Some include this in their will, others keep a separate document with more detail.",
+              "Clarify your end-of-life wishes:\n\n• **Burial or cremation**: Specify your preference\n• **Funeral service**: Type of service, location, religious/secular preferences\n• **Burial plot**: If desired, purchase in advance (costs $1,000-4,000+)\n• **Prepaid funeral plan**: This is option. You can lock in costs by doing so but research carefully (some companies go bankrupt)\n• **Cost planning**: Average funeral costs $7,000-12,000\n\nDocument everything in writing and discuss with family. Some include this in their will, others keep a separate document with more detail.",
             isOptional: true,
           },
         ],
@@ -615,7 +615,7 @@ export const checklistData: Checklist[] = [
             title: "Establish Financial Power of Attorney",
             description: "Authorize someone to handle your finances if you can't.",
             details:
-              "A Financial POA allows a trusted person to manage your money and property:\n\n• **What it covers**: Pay bills, manage investments, file taxes, handle banking, sell property if needed\n• **Types**: Immediate (effective now) vs. springing (activated upon incapacitation)\n• **Agent selection**: Choose someone financially responsible and trustworthy—spouse, adult child, or trusted advisor\n• **Multiple agents**: Can name co-agents or successor agents if first choice can't serve\n• **Limitations**: You can specify what they can/cannot do\n\n**Critical**: Without this, your family may need court approval (guardianship/conservatorship) to manage your finances—expensive and time-consuming process.",
+              "A Financial POA allows a trusted person to manage your money and property:\n\n• **What it covers**: Pay bills, manage investments, file taxes, handle banking, sell property if needed\n• **Types**: Immediate (effective now) vs. springing (activated upon incapacitation)\n• **Agent selection**: Choose someone financially responsible and trustworthy: spouse, adult child, or trusted advisor\n• **Multiple agents**: Can name co-agents or successor agents if first choice can't serve\n• **Limitations**: You can specify what they can/cannot do\n\n**Critical**: Without this, your family may need court approval (guardianship/conservatorship) to manage your finances, an expensive and time-consuming process.",
           },
           {
             id: "medical-poa",
@@ -629,7 +629,7 @@ export const checklistData: Checklist[] = [
             title: "Create a Living Will (Advance Directive)",
             description: "Document your end-of-life medical preferences in advance.",
             details:
-              "A Living Will specifies what medical treatments you want or don't want:\n\n• **Life-sustaining treatments**: CPR, ventilators, feeding tubes, dialysis\n• **Palliative care**: Focus on comfort vs. life extension\n• **Scenarios**: Terminal illness, permanent unconsciousness, advanced dementia\n• **Pain management**: Your preferences for pain relief even if it shortens life\n• **Organ donation**: Specify your wishes regarding organ/tissue donation\n\n**Works with Medical POA**: Living Will provides guidance, Medical POA makes decisions in situations you didn't specifically address. Having both gives your family clarity and reduces guilt about difficult decisions.\n\n**Tip**: Review every few years—preferences may change as you age or experience health issues.",
+              "A Living Will specifies what medical treatments you want or don't want:\n\n• **Life-sustaining treatments**: CPR, ventilators, feeding tubes, dialysis\n• **Palliative care**: Focus on comfort vs. life extension\n• **Scenarios**: Terminal illness, permanent unconsciousness, advanced dementia\n• **Pain management**: Your preferences for pain relief even if it shortens life\n• **Organ donation**: Specify your wishes regarding organ/tissue donation\n\n**Works with Medical POA**: Living Will provides guidance, Medical POA makes decisions in situations you didn't specifically address. Having both gives your family clarity and reduces guilt about difficult decisions.\n\n**Tip**: Review every few years. Preferences may change as you age or experience health issues.",
           },
           {
             id: "hipaa-authorization",
@@ -650,7 +650,7 @@ export const checklistData: Checklist[] = [
           {
             id: "update-beneficiaries",
             title: "Review and update all beneficiaries",
-            description: "Beneficiary designations override your will—keep them current.",
+            description: "Beneficiary designations override your will so keep them current.",
             details:
               "Beneficiary designations transfer assets outside of probate and supersede your will:\n\n**Update beneficiaries on:**\n• **Retirement accounts**: 401(k), 403(b), IRA, Roth IRA\n• **Life insurance policies**: All policies including group life through employer\n• **Bank/investment accounts**: POD (payable on death) or TOD (transfer on death) designations\n• **HSA**: Health Savings Account beneficiaries\n• **Annuities**: If you have any\n\n**Review annually** and after major life events (marriage, divorce, birth, death). Many people forget to update these, causing assets to go to ex-spouses, deceased parents, or unintended recipients.\n\n**Name contingent beneficiaries**: Backups if primary beneficiary predeceases you.",
           },
@@ -659,21 +659,21 @@ export const checklistData: Checklist[] = [
             title: "Record account information, PINs, and passwords",
             description: "Create a master list of all financial accounts and access information.",
             details:
-              "Your heirs will need access to your accounts—make it possible:\n\n**Document:**\n• **Bank accounts**: Institution names, account numbers, online login usernames (not passwords yet)\n• **Investment accounts**: Brokerage, retirement accounts, 529 plans\n• **Credit cards**: List all cards and institutions\n• **Insurance policies**: Life, health, auto, home, umbrella—policy numbers and agent contacts\n• **Loans/debts**: Mortgages, car loans, student loans, personal loans\n• **Utilities and subscriptions**: Services that need cancellation\n• **Digital assets**: Cryptocurrency wallets, online businesses, valuable digital accounts\n\n**Passwords and PINs**: Store separately in a secure location (safe deposit box, locked file, password manager with emergency access). Consider a password manager with emergency contact feature (1Password, LastPass) that releases access after verification period.\n\n**Update annually** as accounts change.",
+              "Your heirs will need access to your accounts - make it possible:\n\n**Document:**\n• **Bank accounts**: Institution names, account numbers, online login usernames (not passwords yet)\n• **Investment accounts**: Brokerage, retirement accounts, 529 plans\n• **Credit cards**: List all cards and institutions\n• **Insurance policies**: Life, health, auto, home, umbrella - policy numbers and agent contacts\n• **Loans/debts**: Mortgages, car loans, student loans, personal loans\n• **Utilities and subscriptions**: Services that need cancellation\n• **Digital assets**: Cryptocurrency wallets, online businesses, valuable digital accounts\n\n**Passwords and PINs**: Store separately in a secure location (safe deposit box, locked file, password manager with emergency access). Consider a password manager with emergency contact feature (1Password, LastPass) that releases access after verification period.\n\n**Update annually** as accounts change.",
           },
           {
             id: "list-assets-debts",
             title: "Create comprehensive asset and debt inventory",
             description: "Document everything you own and owe.",
             details:
-              "A complete inventory prevents assets from being lost and ensures debts are addressed:\n\n**Assets:**\n• **Real estate**: Properties you own, deeds location, mortgage information\n• **Vehicles**: Cars, boats, RVs—titles and loan information\n• **Bank/investment accounts**: Already documented, but include current approximate values\n• **Business ownership**: Partnership agreements, succession plans, business valuation\n• **Valuables**: Jewelry, art, collections, family heirlooms with significant value\n• **Storage units**: Locations and contents\n• **Safe deposit boxes**: Location, key location, contents list\n\n**Debts:**\n• All loans with balances, payment schedules, and account information\n• Note which debts have insurance (mortgage insurance, auto gap insurance)\n\nStore this with your estate documents and provide copy to executor.",
+              "A complete inventory prevents assets from being lost and ensures debts are addressed:\n\n**Assets:**\n• **Real estate**: Properties you own, deeds location, mortgage information\n• **Vehicles**: Cars, boats, RVs - titles and loan information\n• **Bank/investment accounts**: Already documented, but include current approximate values\n• **Business ownership**: Partnership agreements, succession plans, business valuation\n• **Valuables**: Jewelry, art, collections, family heirlooms with significant value\n• **Storage units**: Locations and contents\n• **Safe deposit boxes**: Location, key location, contents list\n\n**Debts:**\n• All loans with balances, payment schedules, and account information\n• Note which debts have insurance (mortgage insurance, auto gap insurance)\n\nStore this with your estate documents and provide copy to executor.",
           },
           {
             id: "organize-important-documents",
             title: "Organize and store important documents securely",
             description: "Make critical documents accessible to the right people.",
             details:
-              "Your family will need various documents—organize them now:\n\n**Legal documents:**\n• Will, trusts, powers of attorney, healthcare directives\n• Birth certificate, marriage certificate, divorce decrees\n• Military discharge papers (DD-214) if applicable\n• Social Security card\n\n**Financial documents:**\n• Recent tax returns (7 years)\n• Insurance policies (life, health, property)\n• Property deeds and titles\n• Investment account statements\n\n**Storage recommendations:**\n• **Fireproof safe at home**: Copies of everything\n• **Safe deposit box**: Original will (or give to attorney), deeds, birth certificates\n• **Attorney's office**: Estate planning documents\n• **Tell executor/POA agents**: Where everything is located and how to access\n\n**Digital copies**: Scan everything and store encrypted backups in secure cloud storage with access instructions for executor.",
+              "Your family will need various documents - organize them now:\n\n**Legal documents:**\n• Will, trusts, powers of attorney, healthcare directives\n• Birth certificate, marriage certificate, divorce decrees\n• Military discharge papers (DD-214) if applicable\n• Social Security card\n\n**Financial documents:**\n• Recent tax returns (7 years)\n• Insurance policies (life, health, property)\n• Property deeds and titles\n• Investment account statements\n\n**Storage recommendations:**\n• **Fireproof safe at home**: Copies of everything\n• **Safe deposit box**: Original will (or give to attorney), deeds, birth certificates\n• **Attorney's office**: Estate planning documents\n• **Tell executor/POA agents**: Where everything is located and how to access\n\n**Digital copies**: Scan everything and store encrypted backups in secure cloud storage with access instructions for executor.",
             isOptional: true,
           },
           {
@@ -681,7 +681,7 @@ export const checklistData: Checklist[] = [
             title: "Write a Letter of Instruction to your heirs",
             description: "Provide guidance beyond the legal documents.",
             details:
-              "A Letter of Instruction (not legally binding but incredibly helpful) can include:\n\n• **Personal messages**: Final thoughts, explanations of your decisions\n• **Location of documents**: Where to find will, insurance policies, passwords\n• **Funeral wishes**: Detailed preferences beyond what's in official documents\n• **Asset explanations**: Why certain items go to certain people\n• **Instructions**: How to access accounts, who to contact, what to do first\n• **Personal property**: Who gets sentimental items not valuable enough for the will\n• **Digital assets**: Social media accounts, blogs, photo libraries—what to do with them\n\nKeep with estate documents and update as needed. This letter can save your family confusion, conflict, and stress during an already difficult time.",
+              "A Letter of Instruction (not legally binding but incredibly helpful) can include:\n\n• **Personal messages**: Final thoughts, explanations of your decisions\n• **Location of documents**: Where to find will, insurance policies, passwords\n• **Funeral wishes**: Detailed preferences beyond what's in official documents\n• **Asset explanations**: Why certain items go to certain people\n• **Instructions**: How to access accounts, who to contact, what to do first\n• **Personal property**: Who gets sentimental items not valuable enough for the will\n• **Digital assets**: Social media accounts, blogs, photo libraries\n\nKeep with estate documents and update as needed. This letter can save your family confusion, conflict, and stress during an already difficult time.",
             isOptional: true,
           },
         ],
@@ -704,7 +704,7 @@ export const checklistData: Checklist[] = [
             title: "Consider long-term care insurance",
             description: "Evaluate whether LTC insurance makes sense for your situation.",
             details:
-              "Long-term care insurance covers extended care needs:\n\n**What it covers:**\n• Nursing home care ($80,000-120,000/year)\n• Assisted living facility ($48,000-72,000/year)\n• In-home care ($25-30/hour, 24/7 = $200,000+/year)\n• Adult day care services\n\n**Insurance costs:**\n• Age 55: $2,000-3,000/year\n• Age 65: $3,500-5,500/year\n• Costs increase as you age; premiums can increase over time\n\n**Who should consider:**\n• Assets between $200,000-2,000,000 (too much to qualify for Medicaid, not enough to easily self-fund care)\n• Family history of conditions requiring long-term care (dementia, Alzheimer's, stroke)\n• No family members able/willing to provide care\n\n**Who should skip:**\n• Can't afford premiums long-term\n• Significant assets (can self-fund)\n• Very limited assets (will qualify for Medicaid)\n\n**Best purchase age**: 55-60 years old—younger = cheaper premiums but paying longer; older = more expensive or might not qualify.\n\n**Alternative**: Hybrid life/LTC policies (life insurance with LTC rider) or self-insuring with dedicated investments.",
+              "Long-term care insurance covers extended care needs:\n\n**What it covers:**\n• Nursing home care ($80,000-120,000/year)\n• Assisted living facility ($48,000-72,000/year)\n• In-home care ($25-30/hour, 24/7 = $200,000+/year)\n• Adult day care services\n\n**Insurance costs:**\n• Age 55: $2,000-3,000/year\n• Age 65: $3,500-5,500/year\n• Costs increase as you age; premiums can increase over time\n\n**Who should consider:**\n• Assets between $200,000-2,000,000 (too much to qualify for Medicaid, not enough to easily self-fund care)\n• Family history of conditions requiring long-term care (dementia, Alzheimer's, stroke)\n• No family members able/willing to provide care\n\n**Who should skip:**\n• Can't afford premiums long-term\n• Significant assets (can self-fund)\n• Very limited assets (will qualify for Medicaid)\n\n**Best purchase age**: 55-60 years old. Younger = cheaper premiums but paying longer; older = more expensive or might not qualify.\n\n**Alternative**: Hybrid life/LTC policies (life insurance with LTC rider) or self-insuring with dedicated investments.",
             isOptional: true,
           },
           {
@@ -712,7 +712,7 @@ export const checklistData: Checklist[] = [
             title: "Research care options in your area",
             description: "Know what's available before you need it.",
             details:
-              "Understanding your options reduces stress when decisions need to be made:\n\n**Home care:**\n• Family caregivers (most common, hardest on family)\n• Hired caregivers ($25-30/hour)\n• Home healthcare agencies (more expensive but more professional)\n\n**Community-based:**\n• Adult day care centers ($70-100/day)\n• Senior centers with programs and meals\n\n**Residential options:**\n• Independent living ($2,000-4,000/month) - apartment style, minimal services\n• Assisted living ($3,500-6,500/month) - help with daily activities\n• Nursing homes ($7,000-10,000+/month) - 24/7 skilled nursing care\n• Memory care ($5,000-9,000/month) - specialized for dementia/Alzheimer's\n• Continuing care retirement community (CCRC) - all levels of care in one place, requires large upfront deposit ($100,000-1,000,000+)\n\n**Research now**: Tour facilities, understand costs, get on waitlists if necessary for preferred facilities. Quality varies dramatically—research before you need it urgently.",
+              "Understanding your options reduces stress when decisions need to be made:\n\n**Home care:**\n• Family caregivers (most common, hardest on family)\n• Hired caregivers ($25-30/hour)\n• Home healthcare agencies (more expensive but more professional)\n\n**Community-based:**\n• Adult day care centers ($70-100/day)\n• Senior centers with programs and meals\n\n**Residential options:**\n• Independent living ($2,000-4,000/month) - apartment style, minimal services\n• Assisted living ($3,500-6,500/month) - help with daily activities\n• Nursing homes ($7,000-10,000+/month) - 24/7 skilled nursing care\n• Memory care ($5,000-9,000/month) - specialized for dementia/Alzheimer's\n• Continuing care retirement community (CCRC) - all levels of care in one place, requires large upfront deposit ($100,000-1,000,000+)\n\n**Research now**: Tour facilities, understand costs, get on waitlists if necessary for preferred facilities. Quality varies dramatically, so research before you need it urgently.",
             isOptional: true,
           },
           {
@@ -720,7 +720,7 @@ export const checklistData: Checklist[] = [
             title: "Discuss care preferences with family",
             description: "Have honest conversations about your wishes for aging care.",
             details:
-              "Don't leave your family guessing about your preferences:\n\n**Topics to discuss:**\n• **Where do you want to age?**: Home as long as possible, assisted living, nursing home?\n• **Who might provide care?**: Expectations about family caregiving\n• **Financial limits**: How much are you willing to spend? What assets can be used?\n• **Quality of life priorities**: Independence vs. safety, social engagement, specific concerns\n• **Decision-making**: Who should make decisions if you can't?\n\n**Reality check**: What you want may not be financially or physically possible. Discuss realistic scenarios and backup plans.\n\n**For adult children**: Don't assume you'll be your parents' caregiver without discussing capabilities, willingness, and impact on your life. It's okay to say you can't do it—better to be honest now than resentful later.",
+              "Don't leave your family guessing about your preferences:\n\n**Topics to discuss:**\n• **Where do you want to age?**: Home as long as possible, assisted living, nursing home?\n• **Who might provide care?**: Expectations about family caregiving\n• **Financial limits**: How much are you willing to spend? What assets can be used?\n• **Quality of life priorities**: Independence vs. safety, social engagement, specific concerns\n• **Decision-making**: Who should make decisions if you can't?\n\n**Reality check**: What you want may not be financially or physically possible. Discuss realistic scenarios and backup plans.\n\n**For adult children**: Don't assume you'll be your parents' caregiver without discussing capabilities, willingness, and impact on your life. It's okay to say you can't do it, but it's better to be honest now than resentful later.",
             isOptional: true,
           },
         ],
@@ -736,7 +736,7 @@ export const checklistData: Checklist[] = [
             title: "Review retirement income streams",
             description: "Verify you have sufficient income for your needs.",
             details:
-              "Identify all income sources in retirement:\n\n• **Social Security**: Maximize by delaying to age 70 if possible (8% increase per year from 67-70)\n• **Pensions**: If you have them, understand payment options (life only vs. joint and survivor)\n• **Retirement accounts**: 401(k), IRA, Roth IRA—understand withdrawal strategies and required minimum distributions (RMDs)\n• **Investment income**: Dividends, interest, rental income\n• **Part-time work**: Some retirees continue working part-time\n• **Annuities**: If you have any, understand payout terms\n\n**Calculate total**: Does it cover your expected expenses plus healthcare and unexpected costs? If not, consider working longer, reducing expenses, or adjusting retirement expectations.\n\n**Withdrawal strategy**: Common rule is 4% of retirement savings per year, adjusted for inflation. Consult a fee-only financial planner for personalized guidance.",
+              "Identify all income sources in retirement:\n\n• **Social Security**: Maximize by delaying to age 70 if possible (8% increase per year from 67-70)\n• **Pensions**: If you have them, understand payment options (life only vs. joint and survivor)\n• **Retirement accounts**: 401(k), IRA, Roth IRA - understand withdrawal strategies and required minimum distributions (RMDs)\n• **Investment income**: Dividends, interest, rental income\n• **Part-time work**: Some retirees continue working part-time\n• **Annuities**: If you have any, understand payout terms\n\n**Calculate total**: Does it cover your expected expenses plus healthcare and unexpected costs? If not, consider working longer, reducing expenses, or adjusting retirement expectations.\n\n**Withdrawal strategy**: Common rule is 4% of retirement savings per year, adjusted for inflation. Consult a fee-only financial planner for personalized guidance.",
           },
           {
             id: "plan-estate-taxes",
@@ -759,7 +759,7 @@ export const checklistData: Checklist[] = [
             title: "Review all insurance coverage",
             description: "Ensure appropriate coverage for your stage of life.",
             details:
-              "Insurance needs change as you age:\n\n**Life insurance:**\n• If children are independent and debts paid off, you may not need it\n• Keep enough to cover estate taxes, final expenses, or income for surviving spouse\n• If you have permanent policy (whole/universal life), review if it still makes sense\n\n**Health insurance:**\n• Medicare enrollment at 65 is critical—missing deadlines causes permanent penalties\n• Medigap or Medicare Advantage to fill coverage gaps\n• Part D prescription drug coverage\n\n**Disability insurance:**\n• Often not needed in retirement, can cancel once fully retired\n\n**Long-term care insurance:**\n• Discussed in previous section\n\n**Umbrella liability:**\n• $1-5 million coverage costs $200-500/year\n• Protects assets from lawsuits\n• Still valuable in retirement if you have assets to protect\n\n**Property/auto insurance:**\n• Review coverage levels—still adequate?\n• Bundle for discounts\n• Consider increasing deductibles to lower premiums if you have emergency fund\n\nReview annually and after major life changes.",
+              "Insurance needs change as you age:\n\n**Life insurance:**\n• If children are independent and debts paid off, you may not need it\n• Keep enough to cover estate taxes, final expenses, or income for surviving spouse\n• If you have permanent policy (whole/universal life), review if it still makes sense\n\n**Health insurance:**\n• Medicare enrollment at 65 is critical - missing deadlines causes permanent penalties\n• Medigap or Medicare Advantage to fill coverage gaps\n• Part D prescription drug coverage\n\n**Disability insurance:**\n• Often not needed in retirement, can cancel once fully retired\n\n**Long-term care insurance:**\n• Discussed in previous section\n\n**Umbrella liability:**\n• $1-5 million coverage costs $200-500/year\n• Protects assets from lawsuits\n• Still valuable in retirement if you have assets to protect\n\n**Property/auto insurance:**\n• Review coverage levels.\n• Bundle for discounts\n• Consider increasing deductibles to lower premiums if you have emergency fund\n\nReview annually and after major life changes.",
           },
           {
             id: "charitable-giving",
