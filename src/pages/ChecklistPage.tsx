@@ -13,6 +13,7 @@ const ChecklistPage = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [completedItems, setCompletedItems] = useState<Set<string>>(new Set());
+  const [showKofi, setShowKofi] = useState(false);
 
   // Validate checklist exists
   const checklist = checklistData.find((c) => c.id === id);
@@ -119,12 +120,39 @@ const ChecklistPage = () => {
       <main className="py-12 px-4">
         <div className="max-w-5xl mx-auto space-y-12">
           {/* Introduction */}
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-16 space-y-8">
             <p className="text-lg text-muted-foreground leading-relaxed">
               Follow this step-by-step guide to build a solid financial
               foundation, grow your wealth, and optimize your financial future.
               Each step builds on the previous one—check them off as you go!
             </p>
+
+            {/* Ko-fi Support Section */}
+            <div className="bg-card border border-border rounded-lg p-6 shadow-sm">
+              <p className="text-sm text-muted-foreground mb-3">
+                If this checklist was helpful to you, please consider
+              </p>
+              <Button
+                onClick={() => setShowKofi(!showKofi)}
+                variant="default"
+                className="mx-auto"
+              >
+                {showKofi ? "Hide" : "☕ Buy Me a Coffee"}
+              </Button>
+              
+              {showKofi && (
+                <div className="mt-6 animate-in fade-in slide-in-from-top-2 duration-300">
+                  <iframe
+                    id="kofiframe"
+                    src="https://ko-fi.com/personalfinancehelp/?hidefeed=true&widget=true&embed=true&preview=true"
+                    className="border-none w-full rounded-lg"
+                    style={{ background: '#f9f9f9' }}
+                    height="712"
+                    title="personalfinancehelp"
+                  />
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Checklist Sections */}
