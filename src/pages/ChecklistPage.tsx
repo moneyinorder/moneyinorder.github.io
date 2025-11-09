@@ -130,7 +130,7 @@ const ChecklistPage = () => {
             {/* Ko-fi Support Section */}
             <div className="bg-card border border-border rounded-lg p-6 shadow-sm">
               <p className="text-sm text-muted-foreground mb-3">
-                If this checklist was helpful to you, please consider
+                If this checklist was helpful, please consider donating! Your support helps me continue creating free personal finance content.
               </p>
               <Button
                 onClick={() => setShowKofi(!showKofi)}
