@@ -121,12 +121,6 @@ const ChecklistPage = () => {
         <div className="max-w-5xl mx-auto space-y-12">
           {/* Introduction */}
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-8">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Follow this step-by-step guide to build a solid financial
-              foundation, grow your wealth, and optimize your financial future.
-              Each step builds on the previous one—check them off as you go!
-            </p>
-
             {/* Ko-fi Support Section */}
             <div className="bg-card border border-border rounded-lg p-6 shadow-sm">
               <p className="text-sm text-muted-foreground mb-3">
