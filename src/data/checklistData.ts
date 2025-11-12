@@ -168,7 +168,7 @@ export const checklistData: Checklist[] = [
         items: [
           {
             id: "personal-finance-first",
-            title: "Take care of yourself first",
+            title: "Take care of your own financial wellbeing first",
             description: "Just like putting your mask on in an airplane before helping others.",
             details:
               "Before having children, ensure your own financial house is in order. This means having an emergency fund, manageable debt, and a solid budget. Complete the [Personal Finance Checklist](/checklist/personal-finance) first to build your foundation.",
@@ -215,6 +215,13 @@ export const checklistData: Checklist[] = [
             description: "Term life insurance provides affordable protection for your family.",
             details:
               "In the majority of cases, term life insurance is more appropriate than whole life. Calculate coverage as 10-12x your annual income, or enough to replace your income until children are independent plus pay off debts. A 20-30 year term policy is typically recommended. Both parents should be insured, including stay-at-home parents (childcare replacement costs are significant).",
+          },
+          {
+            id: "disability-insurance",
+            title: "Get disability insurance",
+            description: "Protect your faamily's income in case of illness or injury.",
+            details:
+              "Disability insurance replaces a portion of your income if you're unable to work due to illness or injury. Aim for coverage that replaces at least 60% of your income. Both parents should aim to have disability insurance.",
           },
           {
             id: "health-insurance-dependent",
