@@ -94,7 +94,7 @@ const ChecklistPage = () => {
       <ProgressBar completed={completedItems.size} total={totalSteps} />
 
       {/* Header */}
-      <header className="bg-gradient-primary text-primary-foreground py-16 px-6">
+      <header className="bg-gradient-primary text-primary-foreground py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <Button
             variant="ghost"
@@ -102,14 +102,15 @@ const ChecklistPage = () => {
             onClick={() => navigate("/")}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Checklists
+            <span className="hidden sm:inline">Back to Checklists</span>
+            <span className="sm:hidden">Back</span>
           </Button>
           <div className="text-center">
-            <h1 className="text-5xl font-bold mb-4 animate-slide-in-up">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 animate-slide-in-up">
               {checklist.title}
             </h1>
-            <p className="text-xl opacity-90 mb-2">{checklist.description}</p>
-            <p className="text-sm opacity-75">
+            <p className="text-base sm:text-lg md:text-xl opacity-90 mb-2">{checklist.description}</p>
+            <p className="text-xs sm:text-sm opacity-75">
               {completedItems.size} of {totalSteps} steps completed
             </p>
           </div>
@@ -117,13 +118,13 @@ const ChecklistPage = () => {
       </header>
 
       {/* Main Content */}
-      <main className="py-12 px-4">
-        <div className="max-w-5xl mx-auto space-y-12">
+      <main className="py-6 sm:py-8 md:py-12 px-4">
+        <div className="max-w-5xl mx-auto space-y-8 sm:space-y-12">
           {/* Introduction */}
-          <div className="text-center max-w-2xl mx-auto mb-16 space-y-8">
+          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12 md:mb-16 space-y-6 sm:space-y-8">
             {/* Ko-fi Support Section */}
-            <div className="bg-card border border-border rounded-lg p-6 shadow-sm">
-              <p className="text-sm text-muted-foreground mb-3">
+            <div className="bg-card border border-border rounded-lg p-4 sm:p-6 shadow-sm">
+              <p className="text-xs sm:text-sm text-muted-foreground mb-3">
                 If this checklist was helpful, please consider donating! Your support helps me continue creating free personal finance content.
               </p>
               <Button
@@ -188,9 +189,9 @@ const ChecklistPage = () => {
           })}
 
           {/* Footer */}
-          <footer className="text-center py-12">
-            <div className="inline-flex items-center justify-center px-6 py-3 bg-card rounded-full border border-border shadow-sm">
-              <p className="text-sm text-muted-foreground">
+          <footer className="text-center py-8 sm:py-12">
+            <div className="inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-3 bg-card rounded-full border border-border shadow-sm">
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 Progress is saved automatically • Keep going! 💪
               </p>
             </div>

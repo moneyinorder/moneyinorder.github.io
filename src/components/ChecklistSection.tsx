@@ -31,7 +31,7 @@ export const ChecklistSection = ({
   return (
     <section
       className={cn(
-        "py-8 px-6 rounded-3xl transition-colors duration-300",
+        "py-6 px-4 sm:py-8 sm:px-6 rounded-2xl sm:rounded-3xl transition-colors duration-300",
         colorScheme === "foundation" && "bg-section-foundation",
         colorScheme === "growth" && "bg-section-growth",
         colorScheme === "optimize" && "bg-section-optimize"
@@ -40,36 +40,37 @@ export const ChecklistSection = ({
       <div className="max-w-3xl mx-auto">
         <Collapsible open={isOpen} onOpenChange={setIsOpen}>
           <div className="mb-6">
-            <div className="flex items-start justify-between gap-4 mb-4">
-              <div className="flex items-start gap-4 flex-1">
+            <div className="flex flex-col sm:flex-row items-start sm:justify-between gap-4 mb-4">
+              <div className="flex items-start gap-3 sm:gap-4 flex-1 w-full">
                 {icon && (
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 flex-shrink-0">
+                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary/10 flex-shrink-0">
                     {icon}
                   </div>
                 )}
                 <div className="flex-1 min-w-0">
-                  <h2 className="text-3xl font-bold text-foreground mb-2">{title}</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">{title}</h2>
                   {subtitle && (
-                    <p className="text-muted-foreground text-lg">{subtitle}</p>
+                    <p className="text-muted-foreground text-base sm:text-lg">{subtitle}</p>
                   )}
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-2">
                     {completedCount} of {totalCount} items complete
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-2 flex-shrink-0">
+              <div className="flex items-center gap-2 w-full sm:w-auto sm:flex-shrink-0">
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={onMarkAllComplete}
                   disabled={allComplete}
-                  className="whitespace-nowrap"
+                  className="flex-1 sm:flex-initial"
                 >
-                  <CheckCheck className="h-4 w-4 mr-2" />
-                  Mark All Complete
+                  <CheckCheck className="h-4 w-4 sm:mr-2" />
+                  <span className="hidden sm:inline">Mark All Complete</span>
+                  <span className="sm:hidden">Mark All</span>
                 </Button>
                 <CollapsibleTrigger asChild>
-                  <Button variant="ghost" size="sm" className="p-2">
+                  <Button variant="ghost" size="sm" className="p-2 flex-shrink-0">
                     <ChevronDown 
                       className={cn(
                         "h-5 w-5 transition-transform duration-200",

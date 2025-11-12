@@ -33,26 +33,26 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-gradient-primary text-primary-foreground py-16 px-6">
+      <header className="bg-gradient-primary text-primary-foreground py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center mb-4">
-            <ListChecks className="w-12 h-12 mr-3" />
+            <ListChecks className="w-10 h-10 sm:w-12 sm:h-12 mr-2 sm:mr-3" />
           </div>
-          <h1 className="text-5xl font-bold mb-4 animate-slide-in-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 animate-slide-in-up">
             Financial Checklists & Tools
           </h1>
-          <p className="text-xl opacity-90">
+          <p className="text-base sm:text-lg md:text-xl opacity-90 px-4">
             Checklists to guide your journey and tools to help you make informed decisions
           </p>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="py-12 px-4">
-        <div className="max-w-6xl mx-auto space-y-16">
+      <main className="py-6 sm:py-8 md:py-12 px-4">
+        <div className="max-w-6xl mx-auto space-y-8 sm:space-y-12 md:space-y-16">
           {/* Checklists Section */}
           <section>
-            <h2 className="text-3xl font-bold mb-6">Checklists</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Checklists</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {checklistData.map((checklist) => {
                 const totalSteps = checklist.sections.reduce(
