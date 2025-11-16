@@ -131,6 +131,7 @@ const ChecklistPage = () => {
                 onClick={() => setShowKofi(!showKofi)}
                 variant="default"
                 className="mx-auto"
+                data-umami-event="Kofi button"
               >
                 {showKofi ? "Hide" : "☕ Buy Me a Coffee"}
               </Button>
@@ -139,7 +140,6 @@ const ChecklistPage = () => {
                 <div className="mt-6 animate-in fade-in slide-in-from-top-2 duration-300">
                   <iframe
                     id="kofiframe"
-                    data-umami-event="Kofi button"
                     src="https://ko-fi.com/personalfinancehelp/?hidefeed=true&widget=true&embed=true&preview=true"
                     className="border-none w-full rounded-lg"
                     style={{ background: '#f9f9f9' }}
