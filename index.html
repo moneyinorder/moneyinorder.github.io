@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Finance Checklist - Your Path to Financial Freedom</title>
-    <meta name="description" content="A comprehensive step-by-step financial checklist to build your emergency fund, pay off debt, maximize retirement savings, and achieve financial independence." />
-    <meta name="author" content="Personal Finance Guide" />
+    <title>Money in Order - Personal Finance Checklist & Tools for Financial Freedom</title>
+    <meta name="description" content="Free personal finance checklists and tools to organize your money. Step-by-step guides for emergency funds, debt payoff, retirement savings, buying a house, marriage finances, and having children." />
+    <meta name="author" content="Money in Order" />
+    <meta name="keywords" content="personal finance, financial checklist, money management, emergency fund, debt payoff, retirement savings, financial independence, budgeting, mortgage calculator" />
 
-    <meta property="og:title" content="Money in Order" />
+    <meta property="og:title" content="Money in Order - Personal Finance Checklist" />
     <meta property="og:description" content="Follow these checklists and tools to organize your finances and get your money in order." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/opengraph-image.png" />
@@ -15,6 +16,85 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="/opengraph-image.png" />
+
+    <!-- JSON-LD Structured Data for AI Crawlers and SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Money in Order",
+      "description": "Free personal finance checklists and tools to help you organize your money and achieve financial freedom.",
+      "url": "https://moneyinorder.com"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Personal Finance Checklists",
+      "description": "Step-by-step financial checklists for major life events and goals",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Personal Finance Checklist",
+          "description": "A comprehensive checklist covering emergency funds, employer benefits, debt management, retirement accounts (401k, IRA, HSA), and investing strategies."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Having Children Checklist",
+          "description": "Financial preparation for having children including insurance, budgeting for childcare, 529 education savings plans, and estate planning."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Marriage Checklist",
+          "description": "Financial steps for marriage including combining finances, updating beneficiaries, joint accounts, and tax planning as a couple."
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Buying a House Checklist",
+          "description": "Home buying financial preparation including down payment savings, mortgage pre-approval, closing costs, and homeownership expenses."
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much should I have in an emergency fund?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most financial experts recommend having 3-6 months of essential expenses in an easily accessible savings account. Start with a smaller goal like $1,000 and build from there."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I pay off debt or invest first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generally, prioritize high-interest debt (above 6-7%) before investing beyond your employer match. Always contribute enough to get your full employer 401k match first, as that's an immediate 100% return."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the order of operations for personal finance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A common approach is: 1) Build a small emergency fund, 2) Get employer 401k match, 3) Pay off high-interest debt, 4) Build full emergency fund, 5) Max out tax-advantaged accounts (IRA, HSA), 6) Invest in taxable accounts."
+          }
+        }
+      ]
+    }
+    </script>
     
     <script>
       (function() {
@@ -31,5 +111,26 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Fallback content for crawlers that don't execute JavaScript -->
+    <noscript>
+      <h1>Money in Order - Personal Finance Checklists</h1>
+      <p>Free personal finance checklists and tools to help you organize your money and achieve financial freedom.</p>
+      
+      <h2>Available Checklists</h2>
+      <ul>
+        <li><strong>Personal Finance Checklist</strong> - Build your emergency fund, maximize employer benefits, pay off debt, and grow your investments with this step-by-step guide.</li>
+        <li><strong>Having Children Checklist</strong> - Prepare financially for parenthood with guidance on insurance, childcare costs, education savings, and estate planning.</li>
+        <li><strong>Marriage Checklist</strong> - Navigate combining finances as a couple, from joint accounts to tax planning and updating beneficiaries.</li>
+        <li><strong>Buying a House Checklist</strong> - Get ready for homeownership with steps for saving a down payment, getting pre-approved, and understanding closing costs.</li>
+      </ul>
+
+      <h2>Tools</h2>
+      <ul>
+        <li><strong>Mortgage Calculator</strong> - Calculate your monthly mortgage payment, see amortization schedules, and understand the true cost of homeownership.</li>
+      </ul>
+
+      <p>This site requires JavaScript to be enabled for full functionality.</p>
+    </noscript>
   </body>
 </html>
