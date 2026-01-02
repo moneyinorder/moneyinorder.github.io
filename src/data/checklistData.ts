@@ -211,15 +211,15 @@ export const checklistData: Checklist[] = [
           },
           {
             id: "life-insurance",
-            title: "Get life insurance",
+            title: "Life insurance",
             description: "Term life insurance provides affordable protection for your family.",
             details:
               "In the majority of cases, term life insurance is more appropriate than whole life. Calculate coverage as 10-12x your annual income, or enough to replace your income until children are independent plus pay off debts. A 20-30 year term policy is typically recommended. Both parents should be insured, including stay-at-home parents (childcare replacement costs are significant).",
           },
           {
             id: "disability-insurance",
-            title: "Get disability insurance",
-            description: "Protect your faamily's income in case of illness or injury.",
+            title: "Disability insurance",
+            description: "Protect your family's income in case of illness or injury.",
             details:
               "Disability insurance replaces a portion of your income if you're unable to work due to illness or injury. Aim for coverage that replaces at least 60% of your income. Both parents should aim to have disability insurance.",
           },
