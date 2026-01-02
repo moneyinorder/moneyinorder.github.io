@@ -132,7 +132,7 @@ export const ChecklistItem = ({
                   )}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  {item.description}
+                  {formatDetails(item.description)}
                 </p>
                 {item.isOptional && (
                   <span className="inline-block mt-2 text-xs font-medium text-accent px-2 py-1 bg-accent/10 rounded-full">
