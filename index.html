@@ -105,6 +105,22 @@
         }
       })();
     </script>
+    <script>
+      // Override document.referrer with query parameters for platforms that strip referrer
+      (function() {
+        var params = new URLSearchParams(window.location.search);
+        var ref = params.get('ref') || params.get('referrer') || params.get('utm_source');
+        if (ref) {
+          var normalizedRef = ref.includes('.') ? ref : ref + '.com';
+          if (!normalizedRef.startsWith('http')) {
+            normalizedRef = 'https://' + normalizedRef;
+          }
+          Object.defineProperty(document, 'referrer', {
+            get: function() { return normalizedRef; }
+          });
+        }
+      })();
+    </script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="d088c787-e80c-4db6-8a31-a3b871d31408"></script>
   </head>
 
