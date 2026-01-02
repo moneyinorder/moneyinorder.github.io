@@ -176,9 +176,9 @@ export const checklistData: Checklist[] = [
           {
             id: "child-budget",
             title: "Create a new budget for child expenses",
-            description: "Plan for increased costs including childcare, diapers, and more.",
+            description: "Plan for increased costs including childcare, diapers, and more. Middle-income families spend about $1500 per month per child.",
             details:
-              "Children are expensive. Budget for: diapers ($70-80/month), formula if not breastfeeding ($150-200/month), childcare ($800-2,000/month depending on location), clothing, medical expenses, and toys. The USDA estimates middle-income families spend $12,000-14,000 per year per child.",
+              "Children are expensive. Budget for: diapers ($70-80/month), formula if not breastfeeding ($150-200/month), childcare ($800-2,000/month depending on location), clothing, medical expenses, and toys. Note: monthly expenses are inflation-adjusted from a 2015 UDSA report.",
           },
           {
             id: "emergency-fund-children",
