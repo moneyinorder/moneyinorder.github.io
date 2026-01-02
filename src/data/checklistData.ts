@@ -169,9 +169,9 @@ export const checklistData: Checklist[] = [
           {
             id: "personal-finance-first",
             title: "Take care of your own financial wellbeing first",
-            description: "Just like putting your mask on in an airplane before helping others.",
+            description: "Just like putting your mask on in an airplane before helping others, complete the [Personal Finance Checklist](/checklist/personal-finance) first to build your foundation.",
             details:
-              "Before having children, ensure your own financial house is in order. This means having an emergency fund, manageable debt, and a solid budget. Complete the [Personal Finance Checklist](/checklist/personal-finance) first to build your foundation.",
+              "Before having children, ensure your own financial house is in order. This means having an emergency fund, manageable debt, and a solid budget.",
           },
           {
             id: "child-budget",
