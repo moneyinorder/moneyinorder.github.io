@@ -235,14 +235,14 @@ export const checklistData: Checklist[] = [
             title: "Enroll in Dependent Care FSA",
             description: "Save pre-tax dollars for childcare expenses.",
             details:
-              "A Dependent Care FSA allows you to set aside up to $5,000/year (per household) pre-tax for qualified childcare expenses. This covers daycare, preschool, before/after school care, and summer day camps. Calculate carefully - unused funds are forfeited at year-end.",
+              "A Dependent Care FSA allows you to set aside up to $5,000/year (per household) pre-tax for qualified childcare expenses. This covers daycare, preschool, before/after school care, and summer day camps. Note: unused funds are forfeited at year-end.",
           },
           {
             id: "529-plan",
             title: "Open a 529 college savings plan",
             description: "Start saving for education expenses with tax-free growth.",
             details:
-              "529 plans offer tax-free growth for education expenses. You can use any state's plan, though your state may offer tax deductions for contributions. Start with automatic monthly contributions - even $50-100/month adds up over 18 years due to compound growth. Grandparents can also contribute.",
+              "529 plans offer tax-free growth for education expenses. You can use any state's plan, though your state may offer tax deductions for contributions. Start with automatic monthly contributions. With the power of compound growth, even $50/month can add up to $20,000 up over 18 years! Tip: Grandparents can also contribute.",
           },
           {
             id: "estate-planning-docs",
@@ -288,7 +288,7 @@ export const checklistData: Checklist[] = [
             title: "Consider UTMA/UGMA custodial accounts",
             description: "For flexibility beyond education expenses.",
             details:
-              "Unlike 529 plans (education only), UTMA/UGMA accounts can fund anything for the child's benefit - first car, wedding, home down payment. However, these are taxable accounts and become the child's property at age 18-21 (state dependent). Contribute after maxing 529 if you want more flexibility.",
+              "Unlike 529 plans (education only), UTMA/UGMA accounts can fund anything for the child's benefit: first car, wedding, home down payment. However, these are taxable accounts and become the child's property at age 18-21 (state dependent). Contribute after maxing 529 if you want more flexibility.",
             isOptional: true,
           },
         ],
